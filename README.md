@@ -1,6 +1,6 @@
-### Turings-Backend
+# Turings-Backend
 
-# Git Workflow
+## Git Workflow
  1. Create new branch
     `git checkout -b <name of branch>`
  2. ∆ code to complete ticket
