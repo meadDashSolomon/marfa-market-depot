@@ -81,3 +81,16 @@ exports.reportQuestion = (question_id) => {
     throw err;
   });
 }
+
+// helper function for testing mark question helpful/update question route
+exports.getQuestion = (question_id) => {
+  return Questions.findOne({ id: question_id }).exec()
+    .then((question) => {
+      console.log('GET QUESTION SUCCESSFUL:::::', question);
+      return question;
+    })
+    .catch(err => {
+      console.log('ERROR GETTING QUESTION::::::', err);
+      throw err;
+    });
+}

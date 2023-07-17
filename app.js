@@ -103,7 +103,6 @@ app.put('/qa/answers/:answer_id/helpful', (req, res) => {
     })
 })
 
-// report question
 app.put('/qa/answers/:answer_id/report', (req, res) => {
   const answer_id = req.params.answer_id;
   markAnswerReported(answer_id, res)
