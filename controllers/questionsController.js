@@ -4,7 +4,7 @@ exports.fetchQuestions = (product_id, res) => {
   return findQuestions(product_id)
     .then((questions) => {
       console.log("QUESTIONCONTROLLER.js SUCESSFULLY FETCHED QUESTIONS::::::", questions);
-      res.send(questions);
+      res.status(200).send(questions);
       return questions;
     })
     .catch((err) => {
@@ -17,7 +17,7 @@ exports.addQuestion = (question, res) => {
   return saveQuestion(question)
     .then((savedQuestion) => {
       console.log("QUESTIONCONTROLLER.JS SUCCESSFULLY SAVED QUESTION:::::", savedQuestion);
-      res.send(savedQuestion);
+      res.status(201).send(savedQuestion);
       return savedQuestion;
     })
     .catch((err) => {
@@ -30,7 +30,7 @@ exports.markQuestionHelpful = (question_id, res) => {
   return updateQuestion(question_id)
     .then((updatedQuestion) => {
       console.log("QUESTIONCONTROLLER.JS SUCCESSFULLY UPDATED QUESTION", updatedQuestion)
-      res.send(updatedQuestion);
+      res.status(204).send(updatedQuestion);
       return updatedQuestion;
     })
     .catch((err) => {
