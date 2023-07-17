@@ -15,7 +15,7 @@ const answersSchema = new mongoose.Schema({
   date_written: Date,
   answerer_name: String,
   answerer_email: String,
-  reported: Boolean,
+  reported: Number,
   helpful: Number,
 })
 
@@ -48,4 +48,36 @@ exports.saveAnswer = (question_id, answer) => {
       console.log('ERROR SAVING ANSWER:::::', err);
       throw err;
     });
+}
+
+exports.updateAnswer = (answer_id) => {
+  return Answers.findOneAndUpdate(
+    { id: answer_id },
+    { $inc: { helpful: 1 } },
+    { new: true } // This option returns the updated document when true. when false, it returns the doc pre update.
+  ).exec()
+  .then((updatedAnswer) => {
+    console.log('MARK ANSWER AS HELPFUL SUCCESSFUL:::::', updatedAnswer);
+    return updatedAnswer;
+  })
+  .catch((err) => {
+    console.log('ERROR MARKING ANSWER AS HELPFUL:::::', err);
+    throw err;
+  });
+}
+
+exports.reportAnswer = (answer_id) => {
+  return Answers.findOneAndUpdate(
+    { id: answer_id },
+    { $inc: { reported: 1 } },
+    { new: true } // This option returns the updated document when true. when false, it returns the doc pre update.
+  ).exec()
+  .then((reportedAnswer) => {
+    console.log('MARK ANSWER AS REPORTED SUCCESSFUL:::::', reportedAnswer);
+    return reportedAnswer;
+  })
+  .catch((err) => {
+    console.log('ERROR REPORTING ANSWER:::::', err);
+    throw err;
+  });
 }

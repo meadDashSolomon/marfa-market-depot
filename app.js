@@ -1,6 +1,6 @@
 const express = require('express');
 const { fetchQuestions, addQuestion, markQuestionHelpful, markQuestionReported } = require('./controllers/questionsController');
-const { fetchAnswers, addAnswer } = require('./controllers/answersController');
+const { fetchAnswers, addAnswer, markAnswerHelpful, markAnswerReported } = require('./controllers/answersController');
 const app = express();
 const port = 3000;
 
@@ -89,5 +89,28 @@ app.put('/qa/questions/:question_id/report', (req, res) => {
     })
     .catch((err) => {
       console.log("APP.JS ERROR REPORTING QUESTION:::::", err)
+    })
+})
+
+app.put('/qa/answers/:answer_id/helpful', (req, res) => {
+  const answer_id = req.params.answer_id;
+  markAnswerHelpful(answer_id, res)
+    .then((updatedAnswer) => {
+      console.log("APP.JS SUCCESSFULLY MARKED ANSWER HELPFUL:::::", updatedAnswer)
+    })
+    .catch((err) => {
+      console.log("APP.JS ERROR MARKING ANSWER HELPFUL:::::", err)
+    })
+})
+
+// report question
+app.put('/qa/answers/:answer_id/report', (req, res) => {
+  const answer_id = req.params.answer_id;
+  markAnswerReported(answer_id, res)
+    .then((reportedAnswer) => {
+      console.log("APP.JS SUCCESSFULLY REPORTED ANSWER:::::", reportedAnswer)
+    })
+    .catch((err) => {
+      console.log("APP.JS ERROR REPORTING ANSWER:::::", err)
     })
 })

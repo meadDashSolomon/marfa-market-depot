@@ -1,4 +1,4 @@
-const { findAnswers, saveAnswer } = require('../models/answersModel');
+const { findAnswers, saveAnswer, updateAnswer, reportAnswer } = require('../models/answersModel');
 
 exports.fetchAnswers = (question_id, res) => {
   return findAnswers(question_id)
@@ -22,6 +22,33 @@ exports.addAnswer = (question_id, answer, res) => {
     })
     .catch((err) => {
       console.log("ANSWERSCONTROLLER ERROR SAVING ANSWER:::::", err);
+      return res.sendStatus(400);
+    })
+}
+
+
+exports.markAnswerHelpful = (answer_id, res) => {
+  return updateAnswer(answer_id)
+    .then((updatedAnswer) => {
+      console.log("QUESTIONCONTROLLER.JS SUCCESSFULLY UPDATED ANSWER", updatedAnswer)
+      res.status(204).send(updatedAnswer);
+      return updatedAnswer;
+    })
+    .catch((err) => {
+      console.log("QUESTIONCONTROLLER.JS ERROR UPDATING ANSWER", err);
+      return res.sendStatus(400);
+    })
+}
+
+exports.markAnswerReported = (answer_id, res) => {
+  return reportAnswer(answer_id)
+    .then((reportedAnswer) => {
+      console.log("QUESTIONCONTROLLER.JS SUCCESSFULLY REPORTED ANSWER", reportedAnswer)
+      res.status(204).send(reportedAnswer);
+      return reportedAnswer;
+    })
+    .catch((err) => {
+      console.log("QUESTIONCONTROLLER.JS ERROR REPORTING ANSWER", err);
       return res.sendStatus(400);
     })
 }
