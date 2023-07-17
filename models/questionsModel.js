@@ -16,7 +16,7 @@ const questionsSchema = new mongoose.Schema({
   date_written: Date,
   asker_name: String,
   helpful: Number,
-  reported: Boolean,
+  reported: Number,
   asker_email: String,
   answers: Object,
 })
@@ -62,6 +62,22 @@ exports.updateQuestion = (question_id) => {
   })
   .catch((err) => {
     console.log('ERROR MARKING QUESTION AS HELPFUL:::::', err);
+    throw err;
+  });
+}
+
+exports.reportQuestion = (question_id) => {
+  return Questions.findOneAndUpdate(
+    { id: question_id },
+    { $inc: { reported: 1 } },
+    { new: true } // This option returns the updated document when true. when false, it returns the doc pre update.
+  ).exec()
+  .then((reportedQuestion) => {
+    console.log('MARK QUESTION AS REPORTED SUCCESSFUL:::::', reportedQuestion);
+    return reportedQuestion;
+  })
+  .catch((err) => {
+    console.log('ERROR REPORTING QUESTION:::::', err);
     throw err;
   });
 }

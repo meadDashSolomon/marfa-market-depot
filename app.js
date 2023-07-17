@@ -1,5 +1,5 @@
 const express = require('express');
-const { fetchQuestions, addQuestion, markQuestionHelpful } = require('./controllers/questionsController');
+const { fetchQuestions, addQuestion, markQuestionHelpful, markQuestionReported } = require('./controllers/questionsController');
 const { fetchAnswers, addAnswer } = require('./controllers/answersController');
 const app = express();
 const port = 3000;
@@ -68,6 +68,7 @@ app.post('/qa/questions/:question_id/answers', (req, res) => {
 
 // PUT REQUESTS
 
+// mark question helpful
 app.put('/qa/questions/:question_id/helpful', (req, res) => {
   const question_id = req.params.question_id;
   markQuestionHelpful(question_id, res)
@@ -76,5 +77,17 @@ app.put('/qa/questions/:question_id/helpful', (req, res) => {
     })
     .catch((err) => {
       console.log("APP.JS ERROR MARKING QUESTION HELPFUL:::::", err)
+    })
+})
+
+// report question
+app.put('/qa/questions/:question_id/report', (req, res) => {
+  const question_id = req.params.question_id;
+  markQuestionReported(question_id, res)
+    .then((reportedQuestion) => {
+      console.log("APP.JS SUCCESSFULLY Reported Question:::::", reportedQuestion)
+    })
+    .catch((err) => {
+      console.log("APP.JS ERROR REPORTING QUESTION:::::", err)
     })
 })
