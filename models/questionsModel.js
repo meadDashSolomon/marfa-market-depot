@@ -26,7 +26,7 @@ const Questions = mongoose.model("Question", questionsSchema);
 
 // define fetch questions function
 exports.findQuestions = (product_id) => {
-    return Questions.find({ product_id: product_id })
+    return Questions.find({ product_id: product_id }).exec()
       .then((questions) => {
         console.log('FIND QUESITONS SUCCESSFUL::::::', questions);
         return questions;
@@ -35,4 +35,17 @@ exports.findQuestions = (product_id) => {
         console.log('ERROR FINDING QUESTIONS::::::', err);
         throw err;
       });
+}
+
+exports.saveQuestion = (question) => {
+  const newQuestion = new Questions(question);
+  return newQuestion.save()
+    .then((savedQuestion) => {
+      console.log('SAVE QUESTION SUCCESSFUL:::::', savedQuestion);
+      return savedQuestion;
+    })
+    .catch((err) => {
+      console.log('ERROR SAVING QUESTION:::::', err);
+      throw err;
+    });
 }

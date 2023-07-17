@@ -1,4 +1,4 @@
-const { findQuestions } = require('../models/questionsModel');
+const { findQuestions, saveQuestion } = require('../models/questionsModel');
 
 exports.fetchQuestions = (product_id, res) => {
   return findQuestions(product_id)
@@ -9,6 +9,19 @@ exports.fetchQuestions = (product_id, res) => {
     })
     .catch((err) => {
       console.log("QUESTIONCONTROLLER.js ERROR FETCHING QUESTIONS:::::", err);
+      return res.sendStatus(400);
+    })
+}
+
+exports.addQuestion = (question, res) => {
+  return saveQuestion(question)
+    .then((savedQuestion) => {
+      console.log("QUESTIONCONTROLLER.JS SUCCESSFULLY SAVED QUESTION:::::", savedQuestion);
+      res.send(savedQuestion);
+      return savedQuestion;
+    })
+    .catch((err) => {
+      console.log("QUESTIONCONTROLLER.JS ERROR SAVING QUESTION:::::", savedQuestion);
       return res.sendStatus(400);
     })
 }

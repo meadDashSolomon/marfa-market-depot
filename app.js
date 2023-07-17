@@ -1,5 +1,5 @@
 const express = require('express');
-const { fetchQuestions } = require('./controllers/questionsController');
+const { fetchQuestions, addQuestion } = require('./controllers/questionsController');
 const { fetchAnswers } = require('./controllers/answersController');
 const app = express();
 const port = 3000;
@@ -29,5 +29,19 @@ app.get('/qa/questions/:question_id/answers', (req, res) => {
     })
     .catch((err) => {
       console.log("APP.JS ERROR FETCHING QUESTIONS:::::", err)
+    })
+})
+
+// middleware that parses request bodies so that I can access request body with req.body
+app.use(express.json());
+// Saves question for a particular product
+app.post('/qa/questions', (req, res) => {
+  const question = req.body;
+  addQuestion(question, res)
+    .then((savedQuestion) => {
+      console.log("APP.JS SUCCESSFULLY SAVED QUESTION:::::", savedQuestion)
+    })
+    .catch((err) => {
+      console.log("APP.JS - ERROR SAVING QUESTION:::::", err);
     })
 })
