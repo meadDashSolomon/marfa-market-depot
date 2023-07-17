@@ -49,3 +49,19 @@ exports.saveQuestion = (question) => {
       throw err;
     });
 }
+
+exports.updateQuestion = (question_id) => {
+  return Questions.findOneAndUpdate(
+    { id: question_id },
+    { $inc: { helpful: 1 } },
+    { new: true } // This option returns the updated document when true. when false, it returns the doc pre update.
+  ).exec()
+  .then((updatedQuestion) => {
+    console.log('MARK QUESTION AS HELPFUL SUCCESSFUL:::::', updatedQuestion);
+    return updatedQuestion;
+  })
+  .catch((err) => {
+    console.log('ERROR MARKING QUESTION AS HELPFUL:::::', err);
+    throw err;
+  });
+}
