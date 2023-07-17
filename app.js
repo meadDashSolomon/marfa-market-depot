@@ -1,12 +1,15 @@
 const express = require('express');
 const { fetchQuestions, addQuestion } = require('./controllers/questionsController');
-const { fetchAnswers } = require('./controllers/answersController');
+const { fetchAnswers, addAnswer } = require('./controllers/answersController');
 const app = express();
 const port = 3000;
 
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
 });
+
+
+// GET REQUESTS
 
 // Retrieves a list of questions for a particular product
 app.get('/qa/questions', (req, res) => {
@@ -32,6 +35,10 @@ app.get('/qa/questions/:question_id/answers', (req, res) => {
     })
 })
 
+
+
+// POST REQUESTS
+
 // middleware that parses request bodies so that I can access request body with req.body
 app.use(express.json());
 // Saves question for a particular product
@@ -43,5 +50,17 @@ app.post('/qa/questions', (req, res) => {
     })
     .catch((err) => {
       console.log("APP.JS - ERROR SAVING QUESTION:::::", err);
+    })
+})
+
+app.post('/qa/questions/:question_id/answers', (req, res) => {
+  const question_id = req.params.question_id;
+  const answer = req.body;
+  addAnswer(question_id, answer, res)
+    .then((savedAnswer) => {
+      console.log("APP.JS SUCCESSFULLY SAVED ANSWER::::", savedAnswer)
+    })
+    .catch((err) => {
+      console.log("APP.JS ERROR SAVING ANSWER:::::", err);
     })
 })

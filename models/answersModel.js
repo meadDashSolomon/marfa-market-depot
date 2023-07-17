@@ -32,3 +32,20 @@ exports.findAnswers = (question_id) => {
       throw err;
     });
 }
+
+exports.saveAnswer = (question_id, answer) => {
+  const newAnswer = new Answers({
+    ...answer,
+    question_id: question_id,
+  });
+
+  return newAnswer.save()
+    .then((savedAnswer) => {
+      console.log('SAVE ANSWER SUCCESSFULLY:::::', savedAnswer);
+      return savedAnswer;
+    })
+    .catch((err) => {
+      console.log('ERROR SAVING ANSWER:::::', err);
+      throw err;
+    });
+}
