@@ -1,5 +1,18 @@
 const { expect } = require('chai');
-const { getQuestion, updateQuestion } = require('../models/questionsModel');
+const { getQuestion, updateQuestion, findQuestions, saveQuestion, reportQuestion } = require('../models/questionsModel');
+
+describe('findQuestions', () => {
+  it('should find questions for a product', () => {
+    const product_id = 1;
+    return findQuestions(product_id)
+      .then((questions) => {
+        expect(questions).to.be.an('array');
+        expect(questions[0]).to.have.property('product_id').equal(product_id);
+      });
+  });
+})
+
+
 
 describe('updateQuestion', () => {
   it('should increment the helpful score of a question', () => {
@@ -15,3 +28,4 @@ describe('updateQuestion', () => {
       });
   });
 });
+
