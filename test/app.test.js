@@ -77,3 +77,23 @@ describe('POST /qa/questions/:question_id/answers', () => {
       })
   })
 })
+
+describe('PUT /qa/questions/:question_id/helpful', () => {
+  it('should mark a question as helpful', () => {
+    const question_id = 1;
+
+    return request(app)
+      .put(`/qa/questions/${question_id}/helpful`)
+      .expect(204);
+  })
+})
+
+describe('PUT /qa/questions/:question_id/report', () => {
+  it('should report a question', () => {
+    const question_id = 1;
+
+    return request(app)
+      .put(`/qa/questions/${question_id}/report`)
+      .expect(204);
+  })
+})
