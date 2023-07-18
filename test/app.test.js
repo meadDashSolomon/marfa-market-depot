@@ -30,3 +30,26 @@ describe('GET /qa/questions/:question_id/answers', () => {
       })
   })
 })
+
+describe('POST /qa/questions', () => {
+  it('should save a question for a product', () => {
+    const question = {
+      product_id: 1,
+      body: 'Test question',
+      date_written: 1234,
+      asker_name: 'String',
+      helpful: 0,
+      reported: 0,
+      asker_email: 'test@example.com',
+      answers: {}
+    };
+
+    return request(app)
+      .post('/qa/questions')
+      .send(question)
+      .expect(201)
+      .then((res) => {
+        expect(res.body).to.have.property('_id');
+      })
+  })
+})
