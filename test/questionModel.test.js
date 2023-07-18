@@ -12,7 +12,25 @@ describe('findQuestions', () => {
   });
 })
 
-
+describe('saveQuestion', () => {
+  it('should save a question', () => {
+    const question = {
+      product_id: 1,
+      body: 'Test question',
+      date_written: new Date(),
+      asker_name: 'Test',
+      helpful: 0,
+      reported: 0,
+      asker_email: 'test@example.com',
+      answers: {},
+    };
+    return saveQuestion(question)
+      .then((savedQuestion) => {
+        expect(savedQuestion).to.be.an('object');
+        expect(savedQuestion).to.have.property('body').equal(question.body);
+      })
+  });
+});
 
 describe('updateQuestion', () => {
   it('should increment the helpful score of a question', () => {
