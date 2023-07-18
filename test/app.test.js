@@ -53,3 +53,27 @@ describe('POST /qa/questions', () => {
       })
   })
 })
+
+describe('POST /qa/questions/:question_id/answers', () => {
+  it('should save an answer for a question', () => {
+    const question_id = 1;
+    const answer = {
+      question_id: 1,
+      body: 'Test answer',
+      date_written: 1234,
+      answerer_name: 'Test name',
+      answerer_email: 'test@example.com',
+      reported: 0,
+      helpful: 0,
+      photos: []
+    };
+
+    return request(app)
+      .post(`/qa/questions/${question_id}/answers`)
+      .send(answer)
+      .expect(201)
+      .then((res) => {
+        expect(res.body).to.have.property('_id');
+      })
+  })
+})
