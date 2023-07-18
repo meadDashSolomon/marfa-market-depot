@@ -1,0 +1,897 @@
+{
+  "aggregate": {
+    "counters": {
+      "vusers.created_by_name.Post a question and an answer": 9750,
+      "vusers.created": 9750,
+      "http.requests": 9750,
+      "errors.ETIMEDOUT": 9749,
+      "vusers.failed": 9750,
+      "errors.EPIPE": 1
+    },
+    "rates": {
+      "http.request_rate": 24
+    },
+    "firstCounterAt": 1689707696019,
+    "lastCounterAt": 1689708125728,
+    "firstMetricAt": 1689707696019,
+    "lastMetricAt": 1689708125728,
+    "period": 1689708120000,
+    "summaries": {},
+    "histograms": {}
+  },
+  "intermediate": [
+    {
+      "counters": {
+        "vusers.created_by_name.Post a question and an answer": 20,
+        "vusers.created": 20,
+        "http.requests": 20
+      },
+      "rates": {
+        "http.request_rate": 5
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707696019,
+      "lastCounterAt": 1689707699236,
+      "firstMetricAt": 1689707696019,
+      "lastMetricAt": 1689707699236,
+      "period": "1689707690000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Post a question and an answer": 58,
+        "vusers.created": 58,
+        "http.requests": 58,
+        "errors.ETIMEDOUT": 20,
+        "vusers.failed": 20
+      },
+      "rates": {
+        "http.request_rate": 6
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707700024,
+      "lastCounterAt": 1689707709288,
+      "firstMetricAt": 1689707700024,
+      "lastMetricAt": 1689707709288,
+      "period": "1689707700000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Post a question and an answer": 66,
+        "vusers.created": 66,
+        "http.requests": 66,
+        "errors.ETIMEDOUT": 58,
+        "vusers.failed": 58
+      },
+      "rates": {
+        "http.request_rate": 7
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707710027,
+      "lastCounterAt": 1689707719338,
+      "firstMetricAt": 1689707710027,
+      "lastMetricAt": 1689707719338,
+      "period": "1689707710000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Post a question and an answer": 74,
+        "vusers.created": 74,
+        "http.requests": 74,
+        "errors.ETIMEDOUT": 66,
+        "vusers.failed": 66
+      },
+      "rates": {
+        "http.request_rate": 8
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707720030,
+      "lastCounterAt": 1689707729392,
+      "firstMetricAt": 1689707720030,
+      "lastMetricAt": 1689707729392,
+      "period": "1689707720000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 74,
+        "vusers.failed": 74,
+        "vusers.created_by_name.Post a question and an answer": 82,
+        "vusers.created": 82,
+        "http.requests": 82
+      },
+      "rates": {
+        "http.request_rate": 10
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707730033,
+      "lastCounterAt": 1689707739458,
+      "firstMetricAt": 1689707730033,
+      "lastMetricAt": 1689707739458,
+      "period": "1689707730000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 82,
+        "vusers.failed": 82,
+        "vusers.created_by_name.Post a question and an answer": 90,
+        "vusers.created": 90,
+        "http.requests": 90
+      },
+      "rates": {
+        "http.request_rate": 9
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707740035,
+      "lastCounterAt": 1689707749461,
+      "firstMetricAt": 1689707740035,
+      "lastMetricAt": 1689707749461,
+      "period": "1689707740000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 90,
+        "vusers.failed": 90,
+        "vusers.created_by_name.Post a question and an answer": 106,
+        "vusers.created": 106,
+        "http.requests": 106
+      },
+      "rates": {
+        "http.request_rate": 12
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707750038,
+      "lastCounterAt": 1689707759606,
+      "firstMetricAt": 1689707750038,
+      "lastMetricAt": 1689707759606,
+      "period": "1689707750000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 106,
+        "vusers.failed": 106,
+        "vusers.created_by_name.Post a question and an answer": 163,
+        "vusers.created": 163,
+        "http.requests": 163
+      },
+      "rates": {
+        "http.request_rate": 17
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707760044,
+      "lastCounterAt": 1689707769897,
+      "firstMetricAt": 1689707760044,
+      "lastMetricAt": 1689707769897,
+      "period": "1689707760000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 163,
+        "vusers.failed": 163,
+        "vusers.created_by_name.Post a question and an answer": 231,
+        "vusers.created": 231,
+        "http.requests": 231
+      },
+      "rates": {
+        "http.request_rate": 24
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707770049,
+      "lastCounterAt": 1689707779953,
+      "firstMetricAt": 1689707770049,
+      "lastMetricAt": 1689707779953,
+      "period": "1689707770000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 231,
+        "vusers.failed": 231,
+        "vusers.created_by_name.Post a question and an answer": 297,
+        "vusers.created": 297,
+        "http.requests": 297
+      },
+      "rates": {
+        "http.request_rate": 30
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707780010,
+      "lastCounterAt": 1689707789987,
+      "firstMetricAt": 1689707780010,
+      "lastMetricAt": 1689707789987,
+      "period": "1689707780000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 297,
+        "vusers.failed": 297,
+        "vusers.created_by_name.Post a question and an answer": 365,
+        "vusers.created": 365,
+        "http.requests": 365
+      },
+      "rates": {
+        "http.request_rate": 37
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707790013,
+      "lastCounterAt": 1689707799989,
+      "firstMetricAt": 1689707790013,
+      "lastMetricAt": 1689707799989,
+      "period": "1689707790000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 365,
+        "vusers.failed": 365,
+        "vusers.created_by_name.Post a question and an answer": 435,
+        "vusers.created": 435,
+        "http.requests": 435
+      },
+      "rates": {
+        "http.request_rate": 44
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707800021,
+      "lastCounterAt": 1689707809986,
+      "firstMetricAt": 1689707800021,
+      "lastMetricAt": 1689707809986,
+      "period": "1689707800000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 435,
+        "vusers.failed": 435,
+        "vusers.created_by_name.Post a question and an answer": 264,
+        "vusers.created": 264,
+        "http.requests": 264
+      },
+      "rates": {
+        "http.request_rate": 47
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707810016,
+      "lastCounterAt": 1689707819987,
+      "firstMetricAt": 1689707810016,
+      "lastMetricAt": 1689707819987,
+      "period": "1689707810000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 264,
+        "vusers.failed": 264,
+        "vusers.created_by_name.Post a question and an answer": 15,
+        "vusers.created": 15,
+        "http.requests": 15
+      },
+      "rates": {
+        "http.request_rate": 2
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707820020,
+      "lastCounterAt": 1689707829157,
+      "firstMetricAt": 1689707820020,
+      "lastMetricAt": 1689707829157,
+      "period": "1689707820000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 15,
+        "vusers.failed": 15,
+        "vusers.created_by_name.Post a question and an answer": 32,
+        "vusers.created": 32,
+        "http.requests": 32
+      },
+      "rates": {
+        "http.request_rate": 5
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707830089,
+      "lastCounterAt": 1689707839248,
+      "firstMetricAt": 1689707830089,
+      "lastMetricAt": 1689707839248,
+      "period": "1689707830000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 32,
+        "vusers.failed": 32,
+        "vusers.created_by_name.Post a question and an answer": 48,
+        "vusers.created": 48,
+        "http.requests": 48
+      },
+      "rates": {
+        "http.request_rate": 6
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707840096,
+      "lastCounterAt": 1689707849347,
+      "firstMetricAt": 1689707840096,
+      "lastMetricAt": 1689707849347,
+      "period": "1689707840000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 48,
+        "vusers.failed": 48,
+        "vusers.created_by_name.Post a question and an answer": 65,
+        "vusers.created": 65,
+        "http.requests": 65
+      },
+      "rates": {
+        "http.request_rate": 7
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707850104,
+      "lastCounterAt": 1689707859393,
+      "firstMetricAt": 1689707850104,
+      "lastMetricAt": 1689707859393,
+      "period": "1689707850000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 65,
+        "vusers.failed": 65,
+        "vusers.created_by_name.Post a question and an answer": 82,
+        "vusers.created": 82,
+        "http.requests": 82
+      },
+      "rates": {
+        "http.request_rate": 9
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707860111,
+      "lastCounterAt": 1689707869501,
+      "firstMetricAt": 1689707860111,
+      "lastMetricAt": 1689707869501,
+      "period": "1689707860000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 82,
+        "vusers.failed": 82,
+        "vusers.created_by_name.Post a question and an answer": 98,
+        "vusers.created": 98,
+        "http.requests": 98
+      },
+      "rates": {
+        "http.request_rate": 11
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707870115,
+      "lastCounterAt": 1689707879607,
+      "firstMetricAt": 1689707870115,
+      "lastMetricAt": 1689707879607,
+      "period": "1689707870000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 98,
+        "vusers.failed": 98,
+        "vusers.created_by_name.Post a question and an answer": 116,
+        "vusers.created": 116,
+        "http.requests": 116
+      },
+      "rates": {
+        "http.request_rate": 12
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707880121,
+      "lastCounterAt": 1689707889627,
+      "firstMetricAt": 1689707880121,
+      "lastMetricAt": 1689707889627,
+      "period": "1689707880000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Post a question and an answer": 134,
+        "vusers.created": 134,
+        "http.requests": 134,
+        "errors.ETIMEDOUT": 116,
+        "vusers.failed": 116
+      },
+      "rates": {
+        "http.request_rate": 13
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707890126,
+      "lastCounterAt": 1689707899701,
+      "firstMetricAt": 1689707890126,
+      "lastMetricAt": 1689707899701,
+      "period": "1689707890000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 134,
+        "vusers.failed": 134,
+        "vusers.created_by_name.Post a question and an answer": 150,
+        "vusers.created": 150,
+        "http.requests": 150
+      },
+      "rates": {
+        "http.request_rate": 15
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707900134,
+      "lastCounterAt": 1689707909831,
+      "firstMetricAt": 1689707900134,
+      "lastMetricAt": 1689707909831,
+      "period": "1689707900000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Post a question and an answer": 166,
+        "vusers.created": 166,
+        "http.requests": 166,
+        "errors.ETIMEDOUT": 150,
+        "vusers.failed": 150
+      },
+      "rates": {
+        "http.request_rate": 17
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707910134,
+      "lastCounterAt": 1689707919928,
+      "firstMetricAt": 1689707910134,
+      "lastMetricAt": 1689707919928,
+      "period": "1689707910000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Post a question and an answer": 183,
+        "vusers.created": 183,
+        "http.requests": 183,
+        "errors.ETIMEDOUT": 166,
+        "vusers.failed": 166
+      },
+      "rates": {
+        "http.request_rate": 18
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707920140,
+      "lastCounterAt": 1689707929949,
+      "firstMetricAt": 1689707920140,
+      "lastMetricAt": 1689707929949,
+      "period": "1689707920000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 183,
+        "vusers.failed": 183,
+        "vusers.created_by_name.Post a question and an answer": 198,
+        "vusers.created": 198,
+        "http.requests": 198
+      },
+      "rates": {
+        "http.request_rate": 20
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707930001,
+      "lastCounterAt": 1689707939955,
+      "firstMetricAt": 1689707930001,
+      "lastMetricAt": 1689707939955,
+      "period": "1689707930000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 198,
+        "vusers.failed": 198,
+        "vusers.created_by_name.Post a question and an answer": 215,
+        "vusers.created": 215,
+        "http.requests": 215
+      },
+      "rates": {
+        "http.request_rate": 22
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707940003,
+      "lastCounterAt": 1689707949961,
+      "firstMetricAt": 1689707940003,
+      "lastMetricAt": 1689707949961,
+      "period": "1689707940000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 215,
+        "vusers.failed": 215,
+        "vusers.created_by_name.Post a question and an answer": 234,
+        "vusers.created": 234,
+        "http.requests": 234
+      },
+      "rates": {
+        "http.request_rate": 23
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707950007,
+      "lastCounterAt": 1689707959964,
+      "firstMetricAt": 1689707950007,
+      "lastMetricAt": 1689707959964,
+      "period": "1689707950000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Post a question and an answer": 250,
+        "vusers.created": 250,
+        "http.requests": 250,
+        "errors.ETIMEDOUT": 234,
+        "vusers.failed": 234
+      },
+      "rates": {
+        "http.request_rate": 25
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707960015,
+      "lastCounterAt": 1689707969976,
+      "firstMetricAt": 1689707960015,
+      "lastMetricAt": 1689707969976,
+      "period": "1689707960000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 250,
+        "vusers.failed": 250,
+        "vusers.created_by_name.Post a question and an answer": 264,
+        "vusers.created": 264,
+        "http.requests": 264
+      },
+      "rates": {
+        "http.request_rate": 27
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707970021,
+      "lastCounterAt": 1689707979980,
+      "firstMetricAt": 1689707970021,
+      "lastMetricAt": 1689707979980,
+      "period": "1689707970000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 264,
+        "vusers.failed": 264,
+        "vusers.created_by_name.Post a question and an answer": 282,
+        "vusers.created": 282,
+        "http.requests": 282
+      },
+      "rates": {
+        "http.request_rate": 28
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707980025,
+      "lastCounterAt": 1689707989988,
+      "firstMetricAt": 1689707980025,
+      "lastMetricAt": 1689707989988,
+      "period": "1689707980000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 282,
+        "vusers.failed": 282,
+        "vusers.created_by_name.Post a question and an answer": 300,
+        "vusers.created": 300,
+        "http.requests": 300
+      },
+      "rates": {
+        "http.request_rate": 30
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689707990034,
+      "lastCounterAt": 1689707999924,
+      "firstMetricAt": 1689707990034,
+      "lastMetricAt": 1689707999924,
+      "period": "1689707990000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 300,
+        "vusers.failed": 300,
+        "vusers.created_by_name.Post a question and an answer": 316,
+        "vusers.created": 316,
+        "http.requests": 316
+      },
+      "rates": {
+        "http.request_rate": 32
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689708000039,
+      "lastCounterAt": 1689708009957,
+      "firstMetricAt": 1689708000039,
+      "lastMetricAt": 1689708009957,
+      "period": "1689708000000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 316,
+        "vusers.failed": 316,
+        "vusers.created_by_name.Post a question and an answer": 333,
+        "vusers.created": 333,
+        "http.requests": 333
+      },
+      "rates": {
+        "http.request_rate": 33
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689708010056,
+      "lastCounterAt": 1689708019998,
+      "firstMetricAt": 1689708010056,
+      "lastMetricAt": 1689708019998,
+      "period": "1689708010000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Post a question and an answer": 347,
+        "vusers.created": 347,
+        "http.requests": 347,
+        "errors.ETIMEDOUT": 333,
+        "vusers.failed": 333
+      },
+      "rates": {
+        "http.request_rate": 35
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689708020029,
+      "lastCounterAt": 1689708029999,
+      "firstMetricAt": 1689708020029,
+      "lastMetricAt": 1689708029999,
+      "period": "1689708020000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 347,
+        "vusers.failed": 347,
+        "vusers.created_by_name.Post a question and an answer": 366,
+        "vusers.created": 366,
+        "http.requests": 366
+      },
+      "rates": {
+        "http.request_rate": 37
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689708030003,
+      "lastCounterAt": 1689708039993,
+      "firstMetricAt": 1689708030003,
+      "lastMetricAt": 1689708039993,
+      "period": "1689708030000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 366,
+        "vusers.failed": 366,
+        "vusers.created_by_name.Post a question and an answer": 383,
+        "vusers.created": 383,
+        "http.requests": 383
+      },
+      "rates": {
+        "http.request_rate": 38
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689708040005,
+      "lastCounterAt": 1689708049999,
+      "firstMetricAt": 1689708040005,
+      "lastMetricAt": 1689708049999,
+      "period": "1689708040000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 382,
+        "vusers.failed": 382,
+        "vusers.created_by_name.Post a question and an answer": 397,
+        "vusers.created": 397,
+        "http.requests": 397
+      },
+      "rates": {
+        "http.request_rate": 40
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689708050008,
+      "lastCounterAt": 1689708059976,
+      "firstMetricAt": 1689708050008,
+      "lastMetricAt": 1689708059976,
+      "period": "1689708050000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 398,
+        "vusers.failed": 398,
+        "vusers.created_by_name.Post a question and an answer": 415,
+        "vusers.created": 415,
+        "http.requests": 415
+      },
+      "rates": {
+        "http.request_rate": 42
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689708060002,
+      "lastCounterAt": 1689708069978,
+      "firstMetricAt": 1689708060002,
+      "lastMetricAt": 1689708069978,
+      "period": "1689708060000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 415,
+        "vusers.failed": 415,
+        "vusers.created_by_name.Post a question and an answer": 434,
+        "vusers.created": 434,
+        "http.requests": 434
+      },
+      "rates": {
+        "http.request_rate": 43
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689708070015,
+      "lastCounterAt": 1689708079952,
+      "firstMetricAt": 1689708070015,
+      "lastMetricAt": 1689708079952,
+      "period": "1689708070000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 434,
+        "vusers.failed": 434,
+        "vusers.created_by_name.Post a question and an answer": 450,
+        "vusers.created": 450,
+        "http.requests": 450
+      },
+      "rates": {
+        "http.request_rate": 45
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689708080020,
+      "lastCounterAt": 1689708089955,
+      "firstMetricAt": 1689708080020,
+      "lastMetricAt": 1689708089955,
+      "period": "1689708080000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 450,
+        "vusers.failed": 450,
+        "vusers.created_by_name.Post a question and an answer": 466,
+        "vusers.created": 466,
+        "http.requests": 466
+      },
+      "rates": {
+        "http.request_rate": 47
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689708090021,
+      "lastCounterAt": 1689708099956,
+      "firstMetricAt": 1689708090021,
+      "lastMetricAt": 1689708099956,
+      "period": "1689708090000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 466,
+        "vusers.failed": 467,
+        "vusers.created_by_name.Post a question and an answer": 482,
+        "vusers.created": 482,
+        "http.requests": 482,
+        "errors.EPIPE": 1
+      },
+      "rates": {
+        "http.request_rate": 48
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689708100022,
+      "lastCounterAt": 1689708109959,
+      "firstMetricAt": 1689708100022,
+      "lastMetricAt": 1689708109959,
+      "period": "1689708100000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 481,
+        "vusers.failed": 481,
+        "vusers.created_by_name.Post a question and an answer": 278,
+        "vusers.created": 278,
+        "http.requests": 278
+      },
+      "rates": {
+        "http.request_rate": 50
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689708110019,
+      "lastCounterAt": 1689708119961,
+      "firstMetricAt": 1689708110019,
+      "lastMetricAt": 1689708119961,
+      "period": "1689708110000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 278,
+        "vusers.failed": 278
+      },
+      "rates": {},
+      "firstCounterAt": 1689708120025,
+      "lastCounterAt": 1689708125728,
+      "firstMetricAt": 1689708120025,
+      "lastMetricAt": 1689708125728,
+      "period": "1689708120000",
+      "summaries": {},
+      "histograms": {}
+    }
+  ]
+}

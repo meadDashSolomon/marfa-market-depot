@@ -21,6 +21,28 @@
   #         url: "/qa/questions?product_id=3"
 
 #----- GET ANSWERS -----
+# config:
+#   target: "http://localhost:3000"
+#   phases:
+#     - duration: 60
+#       arrivalRate: 5
+#       rampTo: 10
+#     - duration: 60
+#       arrivalRate: 10
+#       rampTo: 50
+#     - duration: 300
+#       rampTo: 50
+# scenarios:
+#   - name: Get answers for a question
+#     flow:
+#       - get:
+#           url: "/qa/questions/1/answers"
+#       - get:
+#           url: "/qa/questions/2/answers"
+#       - get:
+#           url: "/qa/questions/3/answers"
+
+#----- BOTH POST REQS -----
 config:
   target: "http://localhost:3000"
   phases:
@@ -33,11 +55,26 @@ config:
     - duration: 300
       rampTo: 50
 scenarios:
-  - name: Get answers for a question
+  - name: Post a question and an answer
     flow:
-      - get:
+      - post:
+          url: "/qa/questions"
+          json:
+            product_id: 1
+            body: "What is the color of this product?"
+            date_written: 12345
+            asker_name: 'Roberto'
+            helpful: 0
+            reported: 0
+            asker_email: 'roberto99@yahoo.com'
+            answers: {}
+      - post:
           url: "/qa/questions/1/answers"
-      - get:
-          url: "/qa/questions/2/answers"
-      - get:
-          url: "/qa/questions/3/answers"
+          json:
+              question_id: 1
+              body: 'String'
+              date_written: 12345
+              answerer_name: 'String'
+              answerer_email: 'String'
+              reported: 0
+              helpful: 0
