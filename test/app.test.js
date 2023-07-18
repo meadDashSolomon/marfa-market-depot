@@ -17,3 +17,16 @@ describe('GET /qa/questions', () => {
       })
   })
 })
+
+describe('GET /qa/questions/:question_id/answers', () => {
+  it('should respond with a list of answers for a question', () => {
+    const question_id = 1;
+
+    return request(app)
+      .get(`/qa/questions/${question_id}/answers`)
+      .expect(200)
+      .then((res) => {
+        expect(res.body).to.be.an('array');
+      })
+  })
+})
