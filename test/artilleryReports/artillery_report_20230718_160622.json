@@ -1,0 +1,3303 @@
+{
+  "aggregate": {
+    "counters": {
+      "vusers.created_by_name.Mark a question as helpful": 9750,
+      "vusers.created": 9750,
+      "http.requests": 9750,
+      "http.codes.204": 9750,
+      "http.responses": 9750,
+      "http.downloaded_bytes": 0,
+      "vusers.failed": 0,
+      "vusers.completed": 9750
+    },
+    "rates": {
+      "http.request_rate": 24
+    },
+    "firstCounterAt": 1689713989079,
+    "firstHistogramAt": 1689713989148,
+    "lastCounterAt": 1689714408855,
+    "lastHistogramAt": 1689714408855,
+    "firstMetricAt": 1689713989079,
+    "lastMetricAt": 1689714408855,
+    "period": 1689714400000,
+    "summaries": {
+      "http.response_time": {
+        "min": 0,
+        "max": 72,
+        "count": 9750,
+        "p50": 3,
+        "median": 3,
+        "p75": 5,
+        "p90": 7.9,
+        "p95": 10.1,
+        "p99": 21.1,
+        "p999": 51.9
+      },
+      "vusers.session_length": {
+        "min": 1.9,
+        "max": 78.6,
+        "count": 9750,
+        "p50": 8.4,
+        "median": 8.4,
+        "p75": 12.3,
+        "p90": 16.9,
+        "p95": 21.5,
+        "p99": 37,
+        "p999": 63.4
+      }
+    },
+    "histograms": {
+      "http.response_time": {
+        "min": 0,
+        "max": 72,
+        "count": 9750,
+        "p50": 3,
+        "median": 3,
+        "p75": 5,
+        "p90": 7.9,
+        "p95": 10.1,
+        "p99": 21.1,
+        "p999": 51.9
+      },
+      "vusers.session_length": {
+        "min": 1.9,
+        "max": 78.6,
+        "count": 9750,
+        "p50": 8.4,
+        "median": 8.4,
+        "p75": 12.3,
+        "p90": 16.9,
+        "p95": 21.5,
+        "p99": 37,
+        "p999": 63.4
+      }
+    }
+  },
+  "intermediate": [
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 5,
+        "vusers.created": 5,
+        "http.requests": 5,
+        "http.codes.204": 5,
+        "http.responses": 5,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 5
+      },
+      "rates": {
+        "http.request_rate": 5
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689713989079,
+      "firstHistogramAt": 1689713989148,
+      "lastCounterAt": 1689713989311,
+      "lastHistogramAt": 1689713989311,
+      "firstMetricAt": 1689713989079,
+      "lastMetricAt": 1689713989311,
+      "period": "1689713980000",
+      "summaries": {
+        "http.response_time": {
+          "min": 9,
+          "max": 31,
+          "count": 5,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.1,
+          "p90": 13.1,
+          "p95": 13.1,
+          "p99": 13.1,
+          "p999": 13.1
+        },
+        "vusers.session_length": {
+          "min": 29.5,
+          "max": 71.7,
+          "count": 5,
+          "p50": 31.5,
+          "median": 31.5,
+          "p75": 37.7,
+          "p90": 37.7,
+          "p95": 37.7,
+          "p99": 37.7,
+          "p999": 37.7
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 9,
+          "max": 31,
+          "count": 5,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.1,
+          "p90": 13.1,
+          "p95": 13.1,
+          "p99": 13.1,
+          "p999": 13.1
+        },
+        "vusers.session_length": {
+          "min": 29.5,
+          "max": 71.7,
+          "count": 5,
+          "p50": 31.5,
+          "median": 31.5,
+          "p75": 37.7,
+          "p90": 37.7,
+          "p95": 37.7,
+          "p99": 37.7,
+          "p999": 37.7
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 55,
+        "vusers.created": 55,
+        "http.requests": 55,
+        "http.codes.204": 55,
+        "http.responses": 55,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 55
+      },
+      "rates": {
+        "http.request_rate": 6
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689713990078,
+      "firstHistogramAt": 1689713990108,
+      "lastCounterAt": 1689713999360,
+      "lastHistogramAt": 1689713999360,
+      "firstMetricAt": 1689713990078,
+      "lastMetricAt": 1689713999360,
+      "period": "1689713990000",
+      "summaries": {
+        "http.response_time": {
+          "min": 2,
+          "max": 14,
+          "count": 55,
+          "p50": 6,
+          "median": 6,
+          "p75": 8.9,
+          "p90": 10.9,
+          "p95": 12.1,
+          "p99": 12.1,
+          "p999": 12.1
+        },
+        "vusers.session_length": {
+          "min": 8.6,
+          "max": 50.7,
+          "count": 55,
+          "p50": 21.1,
+          "median": 21.1,
+          "p75": 24.8,
+          "p90": 30.9,
+          "p95": 37.7,
+          "p99": 46.1,
+          "p999": 46.1
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 2,
+          "max": 14,
+          "count": 55,
+          "p50": 6,
+          "median": 6,
+          "p75": 8.9,
+          "p90": 10.9,
+          "p95": 12.1,
+          "p99": 12.1,
+          "p999": 12.1
+        },
+        "vusers.session_length": {
+          "min": 8.6,
+          "max": 50.7,
+          "count": 55,
+          "p50": 21.1,
+          "median": 21.1,
+          "p75": 24.8,
+          "p90": 30.9,
+          "p95": 37.7,
+          "p99": 46.1,
+          "p999": 46.1
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 63,
+        "vusers.created": 63,
+        "http.requests": 63,
+        "http.codes.204": 63,
+        "http.responses": 63,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 63
+      },
+      "rates": {
+        "http.request_rate": 8
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714000101,
+      "firstHistogramAt": 1689714000116,
+      "lastCounterAt": 1689714009412,
+      "lastHistogramAt": 1689714009412,
+      "firstMetricAt": 1689714000101,
+      "lastMetricAt": 1689714009412,
+      "period": "1689714000000",
+      "summaries": {
+        "http.response_time": {
+          "min": 2,
+          "max": 19,
+          "count": 63,
+          "p50": 4,
+          "median": 4,
+          "p75": 7,
+          "p90": 8.9,
+          "p95": 13.1,
+          "p99": 16,
+          "p999": 16
+        },
+        "vusers.session_length": {
+          "min": 6.4,
+          "max": 35.8,
+          "count": 63,
+          "p50": 18,
+          "median": 18,
+          "p75": 21.5,
+          "p90": 25.3,
+          "p95": 27.9,
+          "p99": 30.9,
+          "p999": 30.9
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 2,
+          "max": 19,
+          "count": 63,
+          "p50": 4,
+          "median": 4,
+          "p75": 7,
+          "p90": 8.9,
+          "p95": 13.1,
+          "p99": 16,
+          "p999": 16
+        },
+        "vusers.session_length": {
+          "min": 6.4,
+          "max": 35.8,
+          "count": 63,
+          "p50": 18,
+          "median": 18,
+          "p75": 21.5,
+          "p90": 25.3,
+          "p95": 27.9,
+          "p99": 30.9,
+          "p999": 30.9
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 71,
+        "vusers.created": 71,
+        "http.requests": 71,
+        "http.codes.204": 71,
+        "http.responses": 71,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 71
+      },
+      "rates": {
+        "http.request_rate": 8
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714010104,
+      "firstHistogramAt": 1689714010124,
+      "lastCounterAt": 1689714019482,
+      "lastHistogramAt": 1689714019482,
+      "firstMetricAt": 1689714010104,
+      "lastMetricAt": 1689714019482,
+      "period": "1689714010000",
+      "summaries": {
+        "http.response_time": {
+          "min": 2,
+          "max": 17,
+          "count": 71,
+          "p50": 4,
+          "median": 4,
+          "p75": 7,
+          "p90": 10.1,
+          "p95": 10.9,
+          "p99": 13.9,
+          "p999": 13.9
+        },
+        "vusers.session_length": {
+          "min": 5.5,
+          "max": 37.9,
+          "count": 71,
+          "p50": 18.4,
+          "median": 18.4,
+          "p75": 23.3,
+          "p90": 27.4,
+          "p95": 29.7,
+          "p99": 34.8,
+          "p999": 34.8
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 2,
+          "max": 17,
+          "count": 71,
+          "p50": 4,
+          "median": 4,
+          "p75": 7,
+          "p90": 10.1,
+          "p95": 10.9,
+          "p99": 13.9,
+          "p999": 13.9
+        },
+        "vusers.session_length": {
+          "min": 5.5,
+          "max": 37.9,
+          "count": 71,
+          "p50": 18.4,
+          "median": 18.4,
+          "p75": 23.3,
+          "p90": 27.4,
+          "p95": 29.7,
+          "p99": 34.8,
+          "p999": 34.8
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 80,
+        "vusers.created": 80,
+        "http.requests": 80,
+        "http.codes.204": 80,
+        "http.responses": 80,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 80
+      },
+      "rates": {
+        "http.request_rate": 8
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714020108,
+      "firstHistogramAt": 1689714020125,
+      "lastCounterAt": 1689714029466,
+      "lastHistogramAt": 1689714029466,
+      "firstMetricAt": 1689714020108,
+      "lastMetricAt": 1689714029466,
+      "period": "1689714020000",
+      "summaries": {
+        "http.response_time": {
+          "min": 2,
+          "max": 21,
+          "count": 80,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 10.9,
+          "p95": 18,
+          "p99": 19.1,
+          "p999": 19.1
+        },
+        "vusers.session_length": {
+          "min": 3.8,
+          "max": 33.7,
+          "count": 80,
+          "p50": 15.3,
+          "median": 15.3,
+          "p75": 19.1,
+          "p90": 26.8,
+          "p95": 30.9,
+          "p99": 33.5,
+          "p999": 33.5
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 2,
+          "max": 21,
+          "count": 80,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 10.9,
+          "p95": 18,
+          "p99": 19.1,
+          "p999": 19.1
+        },
+        "vusers.session_length": {
+          "min": 3.8,
+          "max": 33.7,
+          "count": 80,
+          "p50": 15.3,
+          "median": 15.3,
+          "p75": 19.1,
+          "p90": 26.8,
+          "p95": 30.9,
+          "p99": 33.5,
+          "p999": 33.5
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 89,
+        "vusers.created": 89,
+        "http.requests": 89,
+        "http.codes.204": 89,
+        "http.responses": 89,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 89
+      },
+      "rates": {
+        "http.request_rate": 9
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714030113,
+      "firstHistogramAt": 1689714030126,
+      "lastCounterAt": 1689714039539,
+      "lastHistogramAt": 1689714039539,
+      "firstMetricAt": 1689714030113,
+      "lastMetricAt": 1689714039539,
+      "period": "1689714030000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 56,
+          "count": 89,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 10.1,
+          "p95": 13.9,
+          "p99": 18,
+          "p999": 18
+        },
+        "vusers.session_length": {
+          "min": 3.6,
+          "max": 58.9,
+          "count": 89,
+          "p50": 14.2,
+          "median": 14.2,
+          "p75": 18,
+          "p90": 27.4,
+          "p95": 29.7,
+          "p99": 35.5,
+          "p999": 35.5
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 56,
+          "count": 89,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 10.1,
+          "p95": 13.9,
+          "p99": 18,
+          "p999": 18
+        },
+        "vusers.session_length": {
+          "min": 3.6,
+          "max": 58.9,
+          "count": 89,
+          "p50": 14.2,
+          "median": 14.2,
+          "p75": 18,
+          "p90": 27.4,
+          "p95": 29.7,
+          "p99": 35.5,
+          "p999": 35.5
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 97,
+        "vusers.created": 97,
+        "http.requests": 97,
+        "http.codes.204": 97,
+        "http.responses": 97,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 97
+      },
+      "rates": {
+        "http.request_rate": 10
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714040115,
+      "firstHistogramAt": 1689714040132,
+      "lastCounterAt": 1689714049582,
+      "lastHistogramAt": 1689714049582,
+      "firstMetricAt": 1689714040115,
+      "lastMetricAt": 1689714049582,
+      "period": "1689714040000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 21,
+          "count": 97,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 8.9,
+          "p95": 13.1,
+          "p99": 18,
+          "p999": 18
+        },
+        "vusers.session_length": {
+          "min": 3.2,
+          "max": 33.9,
+          "count": 97,
+          "p50": 13.6,
+          "median": 13.6,
+          "p75": 18.7,
+          "p90": 26.8,
+          "p95": 29.7,
+          "p99": 33.5,
+          "p999": 33.5
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 21,
+          "count": 97,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 8.9,
+          "p95": 13.1,
+          "p99": 18,
+          "p999": 18
+        },
+        "vusers.session_length": {
+          "min": 3.2,
+          "max": 33.9,
+          "count": 97,
+          "p50": 13.6,
+          "median": 13.6,
+          "p75": 18.7,
+          "p90": 26.8,
+          "p95": 29.7,
+          "p99": 33.5,
+          "p999": 33.5
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 143,
+        "vusers.created": 143,
+        "http.requests": 143,
+        "http.codes.204": 143,
+        "http.responses": 143,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 143
+      },
+      "rates": {
+        "http.request_rate": 15
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714050119,
+      "firstHistogramAt": 1689714050134,
+      "lastCounterAt": 1689714059860,
+      "lastHistogramAt": 1689714059860,
+      "firstMetricAt": 1689714050119,
+      "lastMetricAt": 1689714059860,
+      "period": "1689714050000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 25,
+          "count": 143,
+          "p50": 5,
+          "median": 5,
+          "p75": 6,
+          "p90": 7.9,
+          "p95": 13.1,
+          "p99": 21.1,
+          "p999": 22.9
+        },
+        "vusers.session_length": {
+          "min": 4.3,
+          "max": 38,
+          "count": 143,
+          "p50": 12.6,
+          "median": 12.6,
+          "p75": 18,
+          "p90": 26.8,
+          "p95": 31.5,
+          "p99": 37,
+          "p999": 37
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 25,
+          "count": 143,
+          "p50": 5,
+          "median": 5,
+          "p75": 6,
+          "p90": 7.9,
+          "p95": 13.1,
+          "p99": 21.1,
+          "p999": 22.9
+        },
+        "vusers.session_length": {
+          "min": 4.3,
+          "max": 38,
+          "count": 143,
+          "p50": 12.6,
+          "median": 12.6,
+          "p75": 18,
+          "p90": 26.8,
+          "p95": 31.5,
+          "p99": 37,
+          "p999": 37
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 209,
+        "vusers.created": 209,
+        "http.requests": 209,
+        "http.codes.204": 209,
+        "http.responses": 209,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 209
+      },
+      "rates": {
+        "http.request_rate": 22
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714060122,
+      "firstHistogramAt": 1689714060136,
+      "lastCounterAt": 1689714069967,
+      "lastHistogramAt": 1689714069967,
+      "firstMetricAt": 1689714060122,
+      "lastMetricAt": 1689714069967,
+      "period": "1689714060000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 56,
+          "count": 209,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 10.1,
+          "p95": 16.9,
+          "p99": 25.8,
+          "p999": 29.1
+        },
+        "vusers.session_length": {
+          "min": 3.8,
+          "max": 58.1,
+          "count": 209,
+          "p50": 12.3,
+          "median": 12.3,
+          "p75": 16,
+          "p90": 22.9,
+          "p95": 30.3,
+          "p99": 37,
+          "p999": 39.3
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 56,
+          "count": 209,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 10.1,
+          "p95": 16.9,
+          "p99": 25.8,
+          "p999": 29.1
+        },
+        "vusers.session_length": {
+          "min": 3.8,
+          "max": 58.1,
+          "count": 209,
+          "p50": 12.3,
+          "median": 12.3,
+          "p75": 16,
+          "p90": 22.9,
+          "p95": 30.3,
+          "p99": 37,
+          "p999": 39.3
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 277,
+        "vusers.created": 277,
+        "http.requests": 277,
+        "http.codes.204": 277,
+        "http.responses": 277,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 277
+      },
+      "rates": {
+        "http.request_rate": 28
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714070017,
+      "firstHistogramAt": 1689714070024,
+      "lastCounterAt": 1689714079988,
+      "lastHistogramAt": 1689714079988,
+      "firstMetricAt": 1689714070017,
+      "lastMetricAt": 1689714079988,
+      "period": "1689714070000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 48,
+          "count": 277,
+          "p50": 4,
+          "median": 4,
+          "p75": 6,
+          "p90": 7.9,
+          "p95": 10.1,
+          "p99": 19.9,
+          "p999": 47
+        },
+        "vusers.session_length": {
+          "min": 3.3,
+          "max": 49.7,
+          "count": 277,
+          "p50": 9.5,
+          "median": 9.5,
+          "p75": 12.6,
+          "p90": 16,
+          "p95": 18.4,
+          "p99": 27.4,
+          "p999": 48.9
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 48,
+          "count": 277,
+          "p50": 4,
+          "median": 4,
+          "p75": 6,
+          "p90": 7.9,
+          "p95": 10.1,
+          "p99": 19.9,
+          "p999": 47
+        },
+        "vusers.session_length": {
+          "min": 3.3,
+          "max": 49.7,
+          "count": 277,
+          "p50": 9.5,
+          "median": 9.5,
+          "p75": 12.6,
+          "p90": 16,
+          "p95": 18.4,
+          "p99": 27.4,
+          "p999": 48.9
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 345,
+        "vusers.created": 345,
+        "http.requests": 345,
+        "http.codes.204": 345,
+        "http.responses": 345,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 345
+      },
+      "rates": {
+        "http.request_rate": 35
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714080019,
+      "firstHistogramAt": 1689714080023,
+      "lastCounterAt": 1689714089978,
+      "lastHistogramAt": 1689714089978,
+      "firstMetricAt": 1689714080019,
+      "lastMetricAt": 1689714089978,
+      "period": "1689714080000",
+      "summaries": {
+        "http.response_time": {
+          "min": 0,
+          "max": 17,
+          "count": 345,
+          "p50": 3,
+          "median": 3,
+          "p75": 6,
+          "p90": 7.9,
+          "p95": 8.9,
+          "p99": 13.1,
+          "p999": 13.9
+        },
+        "vusers.session_length": {
+          "min": 2.5,
+          "max": 30.9,
+          "count": 345,
+          "p50": 8.6,
+          "median": 8.6,
+          "p75": 11.6,
+          "p90": 15,
+          "p95": 16.3,
+          "p99": 20.7,
+          "p999": 25.8
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 0,
+          "max": 17,
+          "count": 345,
+          "p50": 3,
+          "median": 3,
+          "p75": 6,
+          "p90": 7.9,
+          "p95": 8.9,
+          "p99": 13.1,
+          "p999": 13.9
+        },
+        "vusers.session_length": {
+          "min": 2.5,
+          "max": 30.9,
+          "count": 345,
+          "p50": 8.6,
+          "median": 8.6,
+          "p75": 11.6,
+          "p90": 15,
+          "p95": 16.3,
+          "p99": 20.7,
+          "p999": 25.8
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 413,
+        "vusers.created": 413,
+        "http.requests": 413,
+        "http.codes.204": 413,
+        "http.responses": 413,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 413
+      },
+      "rates": {
+        "http.request_rate": 42
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714090024,
+      "firstHistogramAt": 1689714090029,
+      "lastCounterAt": 1689714099996,
+      "lastHistogramAt": 1689714099996,
+      "firstMetricAt": 1689714090024,
+      "lastMetricAt": 1689714099996,
+      "period": "1689714090000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 32,
+          "count": 413,
+          "p50": 3,
+          "median": 3,
+          "p75": 5,
+          "p90": 8.9,
+          "p95": 13.1,
+          "p99": 19.9,
+          "p999": 30.3
+        },
+        "vusers.session_length": {
+          "min": 2.6,
+          "max": 43.8,
+          "count": 413,
+          "p50": 7.5,
+          "median": 7.5,
+          "p75": 11.6,
+          "p90": 16,
+          "p95": 19.9,
+          "p99": 26.3,
+          "p999": 40.9
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 32,
+          "count": 413,
+          "p50": 3,
+          "median": 3,
+          "p75": 5,
+          "p90": 8.9,
+          "p95": 13.1,
+          "p99": 19.9,
+          "p999": 30.3
+        },
+        "vusers.session_length": {
+          "min": 2.6,
+          "max": 43.8,
+          "count": 413,
+          "p50": 7.5,
+          "median": 7.5,
+          "p75": 11.6,
+          "p90": 16,
+          "p95": 19.9,
+          "p99": 26.3,
+          "p999": 40.9
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 403,
+        "vusers.created": 403,
+        "http.requests": 403,
+        "http.codes.204": 403,
+        "http.responses": 403,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 403
+      },
+      "rates": {
+        "http.request_rate": 48
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714100029,
+      "firstHistogramAt": 1689714100049,
+      "lastCounterAt": 1689714108644,
+      "lastHistogramAt": 1689714108644,
+      "firstMetricAt": 1689714100029,
+      "lastMetricAt": 1689714108644,
+      "period": "1689714100000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 48,
+          "count": 403,
+          "p50": 2,
+          "median": 2,
+          "p75": 5,
+          "p90": 7.9,
+          "p95": 13.9,
+          "p99": 34.1,
+          "p999": 46.1
+        },
+        "vusers.session_length": {
+          "min": 2.4,
+          "max": 51.5,
+          "count": 403,
+          "p50": 5.8,
+          "median": 5.8,
+          "p75": 9.7,
+          "p90": 15.3,
+          "p95": 22,
+          "p99": 47,
+          "p999": 50.9
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 48,
+          "count": 403,
+          "p50": 2,
+          "median": 2,
+          "p75": 5,
+          "p90": 7.9,
+          "p95": 13.9,
+          "p99": 34.1,
+          "p999": 46.1
+        },
+        "vusers.session_length": {
+          "min": 2.4,
+          "max": 51.5,
+          "count": 403,
+          "p50": 5.8,
+          "median": 5.8,
+          "p75": 9.7,
+          "p90": 15.3,
+          "p95": 22,
+          "p99": 47,
+          "p999": 50.9
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 10,
+        "vusers.created": 10,
+        "http.requests": 10,
+        "http.codes.204": 10,
+        "http.responses": 10,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 10
+      },
+      "rates": {
+        "http.request_rate": 3
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714112153,
+      "firstHistogramAt": 1689714112190,
+      "lastCounterAt": 1689714119196,
+      "lastHistogramAt": 1689714119196,
+      "firstMetricAt": 1689714112153,
+      "lastMetricAt": 1689714119196,
+      "period": "1689714110000",
+      "summaries": {
+        "http.response_time": {
+          "min": 2,
+          "max": 21,
+          "count": 10,
+          "p50": 7,
+          "median": 7,
+          "p75": 10.1,
+          "p90": 12.1,
+          "p95": 12.1,
+          "p99": 12.1,
+          "p999": 12.1
+        },
+        "vusers.session_length": {
+          "min": 4.8,
+          "max": 36.9,
+          "count": 10,
+          "p50": 14.7,
+          "median": 14.7,
+          "p75": 16,
+          "p90": 24.8,
+          "p95": 24.8,
+          "p99": 24.8,
+          "p999": 24.8
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 2,
+          "max": 21,
+          "count": 10,
+          "p50": 7,
+          "median": 7,
+          "p75": 10.1,
+          "p90": 12.1,
+          "p95": 12.1,
+          "p99": 12.1,
+          "p999": 12.1
+        },
+        "vusers.session_length": {
+          "min": 4.8,
+          "max": 36.9,
+          "count": 10,
+          "p50": 14.7,
+          "median": 14.7,
+          "p75": 16,
+          "p90": 24.8,
+          "p95": 24.8,
+          "p99": 24.8,
+          "p999": 24.8
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 26,
+        "vusers.created": 26,
+        "http.requests": 26,
+        "http.codes.204": 26,
+        "http.responses": 26,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 26
+      },
+      "rates": {
+        "http.request_rate": 3
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714120158,
+      "firstHistogramAt": 1689714120178,
+      "lastCounterAt": 1689714129246,
+      "lastHistogramAt": 1689714129246,
+      "firstMetricAt": 1689714120158,
+      "lastMetricAt": 1689714129246,
+      "period": "1689714120000",
+      "summaries": {
+        "http.response_time": {
+          "min": 3,
+          "max": 29,
+          "count": 26,
+          "p50": 7,
+          "median": 7,
+          "p75": 8.9,
+          "p90": 12.1,
+          "p95": 12.1,
+          "p99": 12.1,
+          "p999": 12.1
+        },
+        "vusers.session_length": {
+          "min": 5.4,
+          "max": 34.8,
+          "count": 26,
+          "p50": 14.2,
+          "median": 14.2,
+          "p75": 18.7,
+          "p90": 21.5,
+          "p95": 22.9,
+          "p99": 26.8,
+          "p999": 26.8
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 3,
+          "max": 29,
+          "count": 26,
+          "p50": 7,
+          "median": 7,
+          "p75": 8.9,
+          "p90": 12.1,
+          "p95": 12.1,
+          "p99": 12.1,
+          "p999": 12.1
+        },
+        "vusers.session_length": {
+          "min": 5.4,
+          "max": 34.8,
+          "count": 26,
+          "p50": 14.2,
+          "median": 14.2,
+          "p75": 18.7,
+          "p90": 21.5,
+          "p95": 22.9,
+          "p99": 26.8,
+          "p999": 26.8
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 44,
+        "vusers.created": 44,
+        "http.requests": 44,
+        "http.codes.204": 44,
+        "http.responses": 44,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 44
+      },
+      "rates": {
+        "http.request_rate": 5
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714130161,
+      "firstHistogramAt": 1689714130175,
+      "lastCounterAt": 1689714139350,
+      "lastHistogramAt": 1689714139350,
+      "firstMetricAt": 1689714130161,
+      "lastMetricAt": 1689714139350,
+      "period": "1689714130000",
+      "summaries": {
+        "http.response_time": {
+          "min": 2,
+          "max": 11,
+          "count": 44,
+          "p50": 6,
+          "median": 6,
+          "p75": 7.9,
+          "p90": 8.9,
+          "p95": 8.9,
+          "p99": 10.1,
+          "p999": 10.1
+        },
+        "vusers.session_length": {
+          "min": 3.5,
+          "max": 23.8,
+          "count": 44,
+          "p50": 13.9,
+          "median": 13.9,
+          "p75": 15.6,
+          "p90": 18.4,
+          "p95": 21.5,
+          "p99": 22.9,
+          "p999": 22.9
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 2,
+          "max": 11,
+          "count": 44,
+          "p50": 6,
+          "median": 6,
+          "p75": 7.9,
+          "p90": 8.9,
+          "p95": 8.9,
+          "p99": 10.1,
+          "p999": 10.1
+        },
+        "vusers.session_length": {
+          "min": 3.5,
+          "max": 23.8,
+          "count": 44,
+          "p50": 13.9,
+          "median": 13.9,
+          "p75": 15.6,
+          "p90": 18.4,
+          "p95": 21.5,
+          "p99": 22.9,
+          "p999": 22.9
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 60,
+        "vusers.created": 60,
+        "http.requests": 60,
+        "http.codes.204": 60,
+        "http.responses": 60,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 60
+      },
+      "rates": {
+        "http.request_rate": 8
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714140164,
+      "firstHistogramAt": 1689714140180,
+      "lastCounterAt": 1689714149512,
+      "lastHistogramAt": 1689714149512,
+      "firstMetricAt": 1689714140164,
+      "lastMetricAt": 1689714149512,
+      "period": "1689714140000",
+      "summaries": {
+        "http.response_time": {
+          "min": 2,
+          "max": 10,
+          "count": 60,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 7.9,
+          "p95": 8.9,
+          "p99": 10.1,
+          "p999": 10.1
+        },
+        "vusers.session_length": {
+          "min": 3.6,
+          "max": 25.8,
+          "count": 60,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 14.4,
+          "p90": 17.6,
+          "p95": 19.5,
+          "p99": 25.3,
+          "p999": 25.3
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 2,
+          "max": 10,
+          "count": 60,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 7.9,
+          "p95": 8.9,
+          "p99": 10.1,
+          "p999": 10.1
+        },
+        "vusers.session_length": {
+          "min": 3.6,
+          "max": 25.8,
+          "count": 60,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 14.4,
+          "p90": 17.6,
+          "p95": 19.5,
+          "p99": 25.3,
+          "p999": 25.3
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 76,
+        "vusers.created": 76,
+        "http.requests": 76,
+        "http.codes.204": 76,
+        "http.responses": 76,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 76
+      },
+      "rates": {
+        "http.request_rate": 8
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714150168,
+      "firstHistogramAt": 1689714150184,
+      "lastCounterAt": 1689714159530,
+      "lastHistogramAt": 1689714159530,
+      "firstMetricAt": 1689714150168,
+      "lastMetricAt": 1689714159530,
+      "period": "1689714150000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 72,
+          "count": 76,
+          "p50": 5,
+          "median": 5,
+          "p75": 7.9,
+          "p90": 10.1,
+          "p95": 10.9,
+          "p99": 51.9,
+          "p999": 51.9
+        },
+        "vusers.session_length": {
+          "min": 3.8,
+          "max": 78.1,
+          "count": 76,
+          "p50": 12.1,
+          "median": 12.1,
+          "p75": 15.3,
+          "p90": 18,
+          "p95": 19.9,
+          "p99": 59.7,
+          "p999": 59.7
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 72,
+          "count": 76,
+          "p50": 5,
+          "median": 5,
+          "p75": 7.9,
+          "p90": 10.1,
+          "p95": 10.9,
+          "p99": 51.9,
+          "p999": 51.9
+        },
+        "vusers.session_length": {
+          "min": 3.8,
+          "max": 78.1,
+          "count": 76,
+          "p50": 12.1,
+          "median": 12.1,
+          "p75": 15.3,
+          "p90": 18,
+          "p95": 19.9,
+          "p99": 59.7,
+          "p999": 59.7
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 94,
+        "vusers.created": 94,
+        "http.requests": 94,
+        "http.codes.204": 94,
+        "http.responses": 94,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 94
+      },
+      "rates": {
+        "http.request_rate": 10
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714160169,
+      "firstHistogramAt": 1689714160187,
+      "lastCounterAt": 1689714169618,
+      "lastHistogramAt": 1689714169618,
+      "firstMetricAt": 1689714160169,
+      "lastMetricAt": 1689714169618,
+      "period": "1689714160000",
+      "summaries": {
+        "http.response_time": {
+          "min": 2,
+          "max": 25,
+          "count": 94,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 7.9,
+          "p95": 8.9,
+          "p99": 19.9,
+          "p999": 19.9
+        },
+        "vusers.session_length": {
+          "min": 3.4,
+          "max": 32,
+          "count": 94,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.9,
+          "p90": 15.6,
+          "p95": 21.1,
+          "p99": 27.9,
+          "p999": 27.9
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 2,
+          "max": 25,
+          "count": 94,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 7.9,
+          "p95": 8.9,
+          "p99": 19.9,
+          "p999": 19.9
+        },
+        "vusers.session_length": {
+          "min": 3.4,
+          "max": 32,
+          "count": 94,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.9,
+          "p90": 15.6,
+          "p95": 21.1,
+          "p99": 27.9,
+          "p999": 27.9
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 111,
+        "vusers.created": 111,
+        "http.requests": 111,
+        "http.codes.204": 111,
+        "http.responses": 111,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 111
+      },
+      "rates": {
+        "http.request_rate": 11
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714170172,
+      "firstHistogramAt": 1689714170189,
+      "lastCounterAt": 1689714179686,
+      "lastHistogramAt": 1689714179686,
+      "firstMetricAt": 1689714170172,
+      "lastMetricAt": 1689714179686,
+      "period": "1689714170000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 12,
+          "count": 111,
+          "p50": 5,
+          "median": 5,
+          "p75": 6,
+          "p90": 7,
+          "p95": 8.9,
+          "p99": 12.1,
+          "p999": 12.1
+        },
+        "vusers.session_length": {
+          "min": 3.7,
+          "max": 26.8,
+          "count": 111,
+          "p50": 11.4,
+          "median": 11.4,
+          "p75": 13.9,
+          "p90": 18,
+          "p95": 20.3,
+          "p99": 24.8,
+          "p999": 25.3
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 12,
+          "count": 111,
+          "p50": 5,
+          "median": 5,
+          "p75": 6,
+          "p90": 7,
+          "p95": 8.9,
+          "p99": 12.1,
+          "p999": 12.1
+        },
+        "vusers.session_length": {
+          "min": 3.7,
+          "max": 26.8,
+          "count": 111,
+          "p50": 11.4,
+          "median": 11.4,
+          "p75": 13.9,
+          "p90": 18,
+          "p95": 20.3,
+          "p99": 24.8,
+          "p999": 25.3
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 128,
+        "vusers.created": 128,
+        "http.requests": 128,
+        "http.codes.204": 128,
+        "http.responses": 128,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 128
+      },
+      "rates": {
+        "http.request_rate": 13
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714180176,
+      "firstHistogramAt": 1689714180188,
+      "lastCounterAt": 1689714189765,
+      "lastHistogramAt": 1689714189765,
+      "firstMetricAt": 1689714180176,
+      "lastMetricAt": 1689714189765,
+      "period": "1689714180000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 57,
+          "count": 128,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 10.1,
+          "p95": 10.9,
+          "p99": 27.9,
+          "p999": 48.9
+        },
+        "vusers.session_length": {
+          "min": 3.3,
+          "max": 60.5,
+          "count": 128,
+          "p50": 11.8,
+          "median": 11.8,
+          "p75": 15,
+          "p90": 18.7,
+          "p95": 24.3,
+          "p99": 51.9,
+          "p999": 55.2
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 57,
+          "count": 128,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 10.1,
+          "p95": 10.9,
+          "p99": 27.9,
+          "p999": 48.9
+        },
+        "vusers.session_length": {
+          "min": 3.3,
+          "max": 60.5,
+          "count": 128,
+          "p50": 11.8,
+          "median": 11.8,
+          "p75": 15,
+          "p90": 18.7,
+          "p95": 24.3,
+          "p99": 51.9,
+          "p999": 55.2
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 145,
+        "vusers.created": 145,
+        "http.requests": 145,
+        "http.codes.204": 145,
+        "http.responses": 145,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 145
+      },
+      "rates": {
+        "http.request_rate": 15
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714190177,
+      "firstHistogramAt": 1689714190191,
+      "lastCounterAt": 1689714199812,
+      "lastHistogramAt": 1689714199812,
+      "firstMetricAt": 1689714190177,
+      "lastMetricAt": 1689714199812,
+      "period": "1689714190000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 25,
+          "count": 145,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 8.9,
+          "p95": 12.1,
+          "p99": 19.9,
+          "p999": 23.8
+        },
+        "vusers.session_length": {
+          "min": 2.8,
+          "max": 50.3,
+          "count": 145,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 15.3,
+          "p90": 19.1,
+          "p95": 23.8,
+          "p99": 32.8,
+          "p999": 35.5
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 25,
+          "count": 145,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 8.9,
+          "p95": 12.1,
+          "p99": 19.9,
+          "p999": 23.8
+        },
+        "vusers.session_length": {
+          "min": 2.8,
+          "max": 50.3,
+          "count": 145,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 15.3,
+          "p90": 19.1,
+          "p95": 23.8,
+          "p99": 32.8,
+          "p999": 35.5
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 162,
+        "vusers.created": 162,
+        "http.requests": 162,
+        "http.codes.204": 162,
+        "http.responses": 162,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 162
+      },
+      "rates": {
+        "http.request_rate": 16
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714200182,
+      "firstHistogramAt": 1689714200189,
+      "lastCounterAt": 1689714209905,
+      "lastHistogramAt": 1689714209905,
+      "firstMetricAt": 1689714200182,
+      "lastMetricAt": 1689714209905,
+      "period": "1689714200000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 36,
+          "count": 162,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 8.9,
+          "p95": 13.1,
+          "p99": 16.9,
+          "p999": 19.9
+        },
+        "vusers.session_length": {
+          "min": 2.8,
+          "max": 38.7,
+          "count": 162,
+          "p50": 11.1,
+          "median": 11.1,
+          "p75": 14.2,
+          "p90": 18.4,
+          "p95": 22,
+          "p99": 26.3,
+          "p999": 29.1
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 36,
+          "count": 162,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 8.9,
+          "p95": 13.1,
+          "p99": 16.9,
+          "p999": 19.9
+        },
+        "vusers.session_length": {
+          "min": 2.8,
+          "max": 38.7,
+          "count": 162,
+          "p50": 11.1,
+          "median": 11.1,
+          "p75": 14.2,
+          "p90": 18.4,
+          "p95": 22,
+          "p99": 26.3,
+          "p999": 29.1
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 176,
+        "vusers.created": 176,
+        "http.requests": 176,
+        "http.codes.204": 176,
+        "http.responses": 176,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 176
+      },
+      "rates": {
+        "http.request_rate": 18
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714210187,
+      "firstHistogramAt": 1689714210201,
+      "lastCounterAt": 1689714219924,
+      "lastHistogramAt": 1689714219924,
+      "firstMetricAt": 1689714210187,
+      "lastMetricAt": 1689714219924,
+      "period": "1689714210000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 23,
+          "count": 176,
+          "p50": 5,
+          "median": 5,
+          "p75": 6,
+          "p90": 7.9,
+          "p95": 10.9,
+          "p99": 19.9,
+          "p999": 21.1
+        },
+        "vusers.session_length": {
+          "min": 2.8,
+          "max": 59.9,
+          "count": 176,
+          "p50": 11.6,
+          "median": 11.6,
+          "p75": 13.9,
+          "p90": 16.6,
+          "p95": 20.3,
+          "p99": 28.5,
+          "p999": 30.3
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 23,
+          "count": 176,
+          "p50": 5,
+          "median": 5,
+          "p75": 6,
+          "p90": 7.9,
+          "p95": 10.9,
+          "p99": 19.9,
+          "p999": 21.1
+        },
+        "vusers.session_length": {
+          "min": 2.8,
+          "max": 59.9,
+          "count": 176,
+          "p50": 11.6,
+          "median": 11.6,
+          "p75": 13.9,
+          "p90": 16.6,
+          "p95": 20.3,
+          "p99": 28.5,
+          "p999": 30.3
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 194,
+        "vusers.created": 194,
+        "http.requests": 194,
+        "http.codes.204": 194,
+        "http.responses": 194,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 194
+      },
+      "rates": {
+        "http.request_rate": 20
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714220023,
+      "firstHistogramAt": 1689714220038,
+      "lastCounterAt": 1689714229924,
+      "lastHistogramAt": 1689714229924,
+      "firstMetricAt": 1689714220023,
+      "lastMetricAt": 1689714229924,
+      "period": "1689714220000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 47,
+          "count": 194,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 8.9,
+          "p95": 12.1,
+          "p99": 25.8,
+          "p999": 26.8
+        },
+        "vusers.session_length": {
+          "min": 3.4,
+          "max": 49.5,
+          "count": 194,
+          "p50": 11.1,
+          "median": 11.1,
+          "p75": 13.9,
+          "p90": 18,
+          "p95": 25.8,
+          "p99": 33.5,
+          "p999": 35.5
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 47,
+          "count": 194,
+          "p50": 5,
+          "median": 5,
+          "p75": 7,
+          "p90": 8.9,
+          "p95": 12.1,
+          "p99": 25.8,
+          "p999": 26.8
+        },
+        "vusers.session_length": {
+          "min": 3.4,
+          "max": 49.5,
+          "count": 194,
+          "p50": 11.1,
+          "median": 11.1,
+          "p75": 13.9,
+          "p90": 18,
+          "p95": 25.8,
+          "p99": 33.5,
+          "p999": 35.5
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 210,
+        "vusers.created": 210,
+        "http.requests": 210,
+        "http.codes.204": 210,
+        "http.responses": 210,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 210
+      },
+      "rates": {
+        "http.request_rate": 21
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714230028,
+      "firstHistogramAt": 1689714230033,
+      "lastCounterAt": 1689714239929,
+      "lastHistogramAt": 1689714239929,
+      "firstMetricAt": 1689714230028,
+      "lastMetricAt": 1689714239929,
+      "period": "1689714230000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 27,
+          "count": 210,
+          "p50": 5,
+          "median": 5,
+          "p75": 6,
+          "p90": 8.9,
+          "p95": 10.9,
+          "p99": 16.9,
+          "p999": 22
+        },
+        "vusers.session_length": {
+          "min": 3.1,
+          "max": 57.9,
+          "count": 210,
+          "p50": 11.1,
+          "median": 11.1,
+          "p75": 14.7,
+          "p90": 20.3,
+          "p95": 24.8,
+          "p99": 33.5,
+          "p999": 40.9
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 27,
+          "count": 210,
+          "p50": 5,
+          "median": 5,
+          "p75": 6,
+          "p90": 8.9,
+          "p95": 10.9,
+          "p99": 16.9,
+          "p999": 22
+        },
+        "vusers.session_length": {
+          "min": 3.1,
+          "max": 57.9,
+          "count": 210,
+          "p50": 11.1,
+          "median": 11.1,
+          "p75": 14.7,
+          "p90": 20.3,
+          "p95": 24.8,
+          "p99": 33.5,
+          "p999": 40.9
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 228,
+        "vusers.created": 228,
+        "http.requests": 228,
+        "http.codes.204": 228,
+        "http.responses": 228,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 228
+      },
+      "rates": {
+        "http.request_rate": 23
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714240035,
+      "firstHistogramAt": 1689714240040,
+      "lastCounterAt": 1689714249933,
+      "lastHistogramAt": 1689714249933,
+      "firstMetricAt": 1689714240035,
+      "lastMetricAt": 1689714249933,
+      "period": "1689714240000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 26,
+          "count": 228,
+          "p50": 5,
+          "median": 5,
+          "p75": 6,
+          "p90": 8.9,
+          "p95": 10.9,
+          "p99": 21.1,
+          "p999": 22.9
+        },
+        "vusers.session_length": {
+          "min": 3,
+          "max": 57.2,
+          "count": 228,
+          "p50": 10.7,
+          "median": 10.7,
+          "p75": 13.6,
+          "p90": 17.3,
+          "p95": 22.9,
+          "p99": 36.2,
+          "p999": 55.2
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 26,
+          "count": 228,
+          "p50": 5,
+          "median": 5,
+          "p75": 6,
+          "p90": 8.9,
+          "p95": 10.9,
+          "p99": 21.1,
+          "p999": 22.9
+        },
+        "vusers.session_length": {
+          "min": 3,
+          "max": 57.2,
+          "count": 228,
+          "p50": 10.7,
+          "median": 10.7,
+          "p75": 13.6,
+          "p90": 17.3,
+          "p95": 22.9,
+          "p99": 36.2,
+          "p999": 55.2
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 245,
+        "vusers.created": 245,
+        "http.requests": 245,
+        "http.codes.204": 245,
+        "http.responses": 245,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 245
+      },
+      "rates": {
+        "http.request_rate": 25
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714250035,
+      "firstHistogramAt": 1689714250040,
+      "lastCounterAt": 1689714259953,
+      "lastHistogramAt": 1689714259953,
+      "firstMetricAt": 1689714250035,
+      "lastMetricAt": 1689714259953,
+      "period": "1689714250000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 60,
+          "count": 245,
+          "p50": 4,
+          "median": 4,
+          "p75": 6,
+          "p90": 8.9,
+          "p95": 16,
+          "p99": 32.1,
+          "p999": 55.2
+        },
+        "vusers.session_length": {
+          "min": 2.7,
+          "max": 62.1,
+          "count": 245,
+          "p50": 10.1,
+          "median": 10.1,
+          "p75": 12.6,
+          "p90": 17.6,
+          "p95": 22,
+          "p99": 38.5,
+          "p999": 57.4
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 60,
+          "count": 245,
+          "p50": 4,
+          "median": 4,
+          "p75": 6,
+          "p90": 8.9,
+          "p95": 16,
+          "p99": 32.1,
+          "p999": 55.2
+        },
+        "vusers.session_length": {
+          "min": 2.7,
+          "max": 62.1,
+          "count": 245,
+          "p50": 10.1,
+          "median": 10.1,
+          "p75": 12.6,
+          "p90": 17.6,
+          "p95": 22,
+          "p99": 38.5,
+          "p999": 57.4
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 261,
+        "vusers.created": 261,
+        "http.requests": 261,
+        "http.codes.204": 261,
+        "http.responses": 261,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 261
+      },
+      "rates": {
+        "http.request_rate": 26
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714260037,
+      "firstHistogramAt": 1689714260047,
+      "lastCounterAt": 1689714269987,
+      "lastHistogramAt": 1689714269987,
+      "firstMetricAt": 1689714260037,
+      "lastMetricAt": 1689714269987,
+      "period": "1689714260000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 20,
+          "count": 261,
+          "p50": 3,
+          "median": 3,
+          "p75": 5,
+          "p90": 7.9,
+          "p95": 12.1,
+          "p99": 16,
+          "p999": 16.9
+        },
+        "vusers.session_length": {
+          "min": 2.5,
+          "max": 52.3,
+          "count": 261,
+          "p50": 8.4,
+          "median": 8.4,
+          "p75": 12.3,
+          "p90": 17.3,
+          "p95": 21.5,
+          "p99": 27.9,
+          "p999": 29.1
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 20,
+          "count": 261,
+          "p50": 3,
+          "median": 3,
+          "p75": 5,
+          "p90": 7.9,
+          "p95": 12.1,
+          "p99": 16,
+          "p999": 16.9
+        },
+        "vusers.session_length": {
+          "min": 2.5,
+          "max": 52.3,
+          "count": 261,
+          "p50": 8.4,
+          "median": 8.4,
+          "p75": 12.3,
+          "p90": 17.3,
+          "p95": 21.5,
+          "p99": 27.9,
+          "p999": 29.1
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 276,
+        "vusers.created": 276,
+        "http.requests": 276,
+        "http.codes.204": 276,
+        "http.responses": 276,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 276
+      },
+      "rates": {
+        "http.request_rate": 28
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714270036,
+      "firstHistogramAt": 1689714270041,
+      "lastCounterAt": 1689714279969,
+      "lastHistogramAt": 1689714279969,
+      "firstMetricAt": 1689714270036,
+      "lastMetricAt": 1689714279969,
+      "period": "1689714270000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 44,
+          "count": 276,
+          "p50": 4,
+          "median": 4,
+          "p75": 6,
+          "p90": 7.9,
+          "p95": 8.9,
+          "p99": 13.1,
+          "p999": 24.8
+        },
+        "vusers.session_length": {
+          "min": 2.7,
+          "max": 54.2,
+          "count": 276,
+          "p50": 10.1,
+          "median": 10.1,
+          "p75": 13.1,
+          "p90": 17.3,
+          "p95": 19.5,
+          "p99": 31.5,
+          "p999": 47
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 44,
+          "count": 276,
+          "p50": 4,
+          "median": 4,
+          "p75": 6,
+          "p90": 7.9,
+          "p95": 8.9,
+          "p99": 13.1,
+          "p999": 24.8
+        },
+        "vusers.session_length": {
+          "min": 2.7,
+          "max": 54.2,
+          "count": 276,
+          "p50": 10.1,
+          "median": 10.1,
+          "p75": 13.1,
+          "p90": 17.3,
+          "p95": 19.5,
+          "p99": 31.5,
+          "p999": 47
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 295,
+        "vusers.created": 295,
+        "http.requests": 295,
+        "http.codes.204": 295,
+        "http.responses": 295,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 295
+      },
+      "rates": {
+        "http.request_rate": 30
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714280001,
+      "firstHistogramAt": 1689714280004,
+      "lastCounterAt": 1689714289973,
+      "lastHistogramAt": 1689714289973,
+      "firstMetricAt": 1689714280001,
+      "lastMetricAt": 1689714289973,
+      "period": "1689714280000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 16,
+          "count": 295,
+          "p50": 4,
+          "median": 4,
+          "p75": 5,
+          "p90": 7,
+          "p95": 7.9,
+          "p99": 12.1,
+          "p999": 13.9
+        },
+        "vusers.session_length": {
+          "min": 2.4,
+          "max": 33.4,
+          "count": 295,
+          "p50": 9.3,
+          "median": 9.3,
+          "p75": 11.8,
+          "p90": 15.3,
+          "p95": 18.4,
+          "p99": 24.3,
+          "p999": 29.1
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 16,
+          "count": 295,
+          "p50": 4,
+          "median": 4,
+          "p75": 5,
+          "p90": 7,
+          "p95": 7.9,
+          "p99": 12.1,
+          "p999": 13.9
+        },
+        "vusers.session_length": {
+          "min": 2.4,
+          "max": 33.4,
+          "count": 295,
+          "p50": 9.3,
+          "median": 9.3,
+          "p75": 11.8,
+          "p90": 15.3,
+          "p95": 18.4,
+          "p99": 24.3,
+          "p999": 29.1
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 312,
+        "vusers.created": 312,
+        "http.requests": 312,
+        "http.codes.204": 312,
+        "http.responses": 312,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 312
+      },
+      "rates": {
+        "http.request_rate": 31
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714290004,
+      "firstHistogramAt": 1689714290010,
+      "lastCounterAt": 1689714299993,
+      "lastHistogramAt": 1689714299993,
+      "firstMetricAt": 1689714290004,
+      "lastMetricAt": 1689714299993,
+      "period": "1689714290000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 59,
+          "count": 312,
+          "p50": 3,
+          "median": 3,
+          "p75": 5,
+          "p90": 7,
+          "p95": 8.9,
+          "p99": 13.1,
+          "p999": 15
+        },
+        "vusers.session_length": {
+          "min": 2.1,
+          "max": 73.5,
+          "count": 312,
+          "p50": 8.2,
+          "median": 8.2,
+          "p75": 11.8,
+          "p90": 15,
+          "p95": 18.4,
+          "p99": 37,
+          "p999": 66
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 59,
+          "count": 312,
+          "p50": 3,
+          "median": 3,
+          "p75": 5,
+          "p90": 7,
+          "p95": 8.9,
+          "p99": 13.1,
+          "p999": 15
+        },
+        "vusers.session_length": {
+          "min": 2.1,
+          "max": 73.5,
+          "count": 312,
+          "p50": 8.2,
+          "median": 8.2,
+          "p75": 11.8,
+          "p90": 15,
+          "p95": 18.4,
+          "p99": 37,
+          "p999": 66
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 326,
+        "vusers.created": 326,
+        "http.requests": 325,
+        "http.codes.204": 325,
+        "http.responses": 325,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 325
+      },
+      "rates": {
+        "http.request_rate": 33
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714300012,
+      "firstHistogramAt": 1689714300017,
+      "lastCounterAt": 1689714309996,
+      "lastHistogramAt": 1689714309988,
+      "firstMetricAt": 1689714300012,
+      "lastMetricAt": 1689714309996,
+      "period": "1689714300000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 23,
+          "count": 325,
+          "p50": 3,
+          "median": 3,
+          "p75": 5,
+          "p90": 6,
+          "p95": 7,
+          "p99": 8.9,
+          "p999": 12.1
+        },
+        "vusers.session_length": {
+          "min": 2.1,
+          "max": 67.1,
+          "count": 325,
+          "p50": 8.1,
+          "median": 8.1,
+          "p75": 11.8,
+          "p90": 14.7,
+          "p95": 17.3,
+          "p99": 46.1,
+          "p999": 66
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 23,
+          "count": 325,
+          "p50": 3,
+          "median": 3,
+          "p75": 5,
+          "p90": 6,
+          "p95": 7,
+          "p99": 8.9,
+          "p999": 12.1
+        },
+        "vusers.session_length": {
+          "min": 2.1,
+          "max": 67.1,
+          "count": 325,
+          "p50": 8.1,
+          "median": 8.1,
+          "p75": 11.8,
+          "p90": 14.7,
+          "p95": 17.3,
+          "p99": 46.1,
+          "p999": 66
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 344,
+        "vusers.created": 344,
+        "http.requests": 344,
+        "http.codes.204": 343,
+        "http.responses": 343,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 343
+      },
+      "rates": {
+        "http.request_rate": 35
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714310000,
+      "firstHistogramAt": 1689714310004,
+      "lastCounterAt": 1689714319998,
+      "lastHistogramAt": 1689714319995,
+      "firstMetricAt": 1689714310000,
+      "lastMetricAt": 1689714319998,
+      "period": "1689714310000",
+      "summaries": {
+        "http.response_time": {
+          "min": 0,
+          "max": 50,
+          "count": 343,
+          "p50": 3,
+          "median": 3,
+          "p75": 5,
+          "p90": 7,
+          "p95": 10.1,
+          "p99": 21.1,
+          "p999": 45.2
+        },
+        "vusers.session_length": {
+          "min": 2.2,
+          "max": 78.6,
+          "count": 343,
+          "p50": 8.2,
+          "median": 8.2,
+          "p75": 11.6,
+          "p90": 15.6,
+          "p95": 21.1,
+          "p99": 50.9,
+          "p999": 58.6
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 0,
+          "max": 50,
+          "count": 343,
+          "p50": 3,
+          "median": 3,
+          "p75": 5,
+          "p90": 7,
+          "p95": 10.1,
+          "p99": 21.1,
+          "p999": 45.2
+        },
+        "vusers.session_length": {
+          "min": 2.2,
+          "max": 78.6,
+          "count": 343,
+          "p50": 8.2,
+          "median": 8.2,
+          "p75": 11.6,
+          "p90": 15.6,
+          "p95": 21.1,
+          "p99": 50.9,
+          "p999": 58.6
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 358,
+        "vusers.created": 358,
+        "http.requests": 359,
+        "http.codes.204": 360,
+        "http.responses": 360,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 360
+      },
+      "rates": {
+        "http.request_rate": 36
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714320002,
+      "firstHistogramAt": 1689714320002,
+      "lastCounterAt": 1689714329943,
+      "lastHistogramAt": 1689714329943,
+      "firstMetricAt": 1689714320002,
+      "lastMetricAt": 1689714329943,
+      "period": "1689714320000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 31,
+          "count": 360,
+          "p50": 3,
+          "median": 3,
+          "p75": 5,
+          "p90": 7,
+          "p95": 8.9,
+          "p99": 16,
+          "p999": 29.1
+        },
+        "vusers.session_length": {
+          "min": 2.2,
+          "max": 33.4,
+          "count": 360,
+          "p50": 8.6,
+          "median": 8.6,
+          "p75": 11.4,
+          "p90": 15,
+          "p95": 17.6,
+          "p99": 24.8,
+          "p999": 32.1
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 31,
+          "count": 360,
+          "p50": 3,
+          "median": 3,
+          "p75": 5,
+          "p90": 7,
+          "p95": 8.9,
+          "p99": 16,
+          "p999": 29.1
+        },
+        "vusers.session_length": {
+          "min": 2.2,
+          "max": 33.4,
+          "count": 360,
+          "p50": 8.6,
+          "median": 8.6,
+          "p75": 11.4,
+          "p90": 15,
+          "p95": 17.6,
+          "p99": 24.8,
+          "p999": 32.1
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 377,
+        "vusers.created": 377,
+        "http.requests": 377,
+        "http.codes.204": 377,
+        "http.responses": 377,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 377
+      },
+      "rates": {
+        "http.request_rate": 38
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714330012,
+      "firstHistogramAt": 1689714330016,
+      "lastCounterAt": 1689714339960,
+      "lastHistogramAt": 1689714339960,
+      "firstMetricAt": 1689714330012,
+      "lastMetricAt": 1689714339960,
+      "period": "1689714330000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 19,
+          "count": 377,
+          "p50": 3,
+          "median": 3,
+          "p75": 5,
+          "p90": 6,
+          "p95": 7.9,
+          "p99": 13.9,
+          "p999": 16.9
+        },
+        "vusers.session_length": {
+          "min": 2.4,
+          "max": 52.9,
+          "count": 377,
+          "p50": 8.8,
+          "median": 8.8,
+          "p75": 11.1,
+          "p90": 13.6,
+          "p95": 16.6,
+          "p99": 24.3,
+          "p999": 47
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 19,
+          "count": 377,
+          "p50": 3,
+          "median": 3,
+          "p75": 5,
+          "p90": 6,
+          "p95": 7.9,
+          "p99": 13.9,
+          "p999": 16.9
+        },
+        "vusers.session_length": {
+          "min": 2.4,
+          "max": 52.9,
+          "count": 377,
+          "p50": 8.8,
+          "median": 8.8,
+          "p75": 11.1,
+          "p90": 13.6,
+          "p95": 16.6,
+          "p99": 24.3,
+          "p999": 47
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 395,
+        "vusers.created": 395,
+        "http.requests": 395,
+        "http.codes.204": 395,
+        "http.responses": 395,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 395
+      },
+      "rates": {
+        "http.request_rate": 40
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714340021,
+      "firstHistogramAt": 1689714340025,
+      "lastCounterAt": 1689714349982,
+      "lastHistogramAt": 1689714349982,
+      "firstMetricAt": 1689714340021,
+      "lastMetricAt": 1689714349982,
+      "period": "1689714340000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 46,
+          "count": 395,
+          "p50": 3,
+          "median": 3,
+          "p75": 5,
+          "p90": 7.9,
+          "p95": 12.1,
+          "p99": 27.9,
+          "p999": 46.1
+        },
+        "vusers.session_length": {
+          "min": 2.1,
+          "max": 47.9,
+          "count": 395,
+          "p50": 7.8,
+          "median": 7.8,
+          "p75": 11.1,
+          "p90": 15,
+          "p95": 19.9,
+          "p99": 34.1,
+          "p999": 47
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 46,
+          "count": 395,
+          "p50": 3,
+          "median": 3,
+          "p75": 5,
+          "p90": 7.9,
+          "p95": 12.1,
+          "p99": 27.9,
+          "p999": 46.1
+        },
+        "vusers.session_length": {
+          "min": 2.1,
+          "max": 47.9,
+          "count": 395,
+          "p50": 7.8,
+          "median": 7.8,
+          "p75": 11.1,
+          "p90": 15,
+          "p95": 19.9,
+          "p99": 34.1,
+          "p999": 47
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 411,
+        "vusers.created": 411,
+        "http.requests": 411,
+        "http.codes.204": 411,
+        "http.responses": 411,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 411
+      },
+      "rates": {
+        "http.request_rate": 41
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714350029,
+      "firstHistogramAt": 1689714350033,
+      "lastCounterAt": 1689714359988,
+      "lastHistogramAt": 1689714359988,
+      "firstMetricAt": 1689714350029,
+      "lastMetricAt": 1689714359988,
+      "period": "1689714350000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 67,
+          "count": 411,
+          "p50": 3,
+          "median": 3,
+          "p75": 4,
+          "p90": 6,
+          "p95": 7.9,
+          "p99": 22,
+          "p999": 51.9
+        },
+        "vusers.session_length": {
+          "min": 2,
+          "max": 68.7,
+          "count": 411,
+          "p50": 6.2,
+          "median": 6.2,
+          "p75": 9.9,
+          "p90": 13.1,
+          "p95": 15.6,
+          "p99": 35.5,
+          "p999": 63.4
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 67,
+          "count": 411,
+          "p50": 3,
+          "median": 3,
+          "p75": 4,
+          "p90": 6,
+          "p95": 7.9,
+          "p99": 22,
+          "p999": 51.9
+        },
+        "vusers.session_length": {
+          "min": 2,
+          "max": 68.7,
+          "count": 411,
+          "p50": 6.2,
+          "median": 6.2,
+          "p75": 9.9,
+          "p90": 13.1,
+          "p95": 15.6,
+          "p99": 35.5,
+          "p999": 63.4
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 427,
+        "vusers.created": 427,
+        "http.requests": 427,
+        "http.codes.204": 427,
+        "http.responses": 427,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 427
+      },
+      "rates": {
+        "http.request_rate": 43
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714360044,
+      "firstHistogramAt": 1689714360055,
+      "lastCounterAt": 1689714369983,
+      "lastHistogramAt": 1689714369983,
+      "firstMetricAt": 1689714360044,
+      "lastMetricAt": 1689714369983,
+      "period": "1689714360000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 36,
+          "count": 427,
+          "p50": 2,
+          "median": 2,
+          "p75": 2,
+          "p90": 3,
+          "p95": 3,
+          "p99": 8.9,
+          "p999": 13.1
+        },
+        "vusers.session_length": {
+          "min": 2.1,
+          "max": 44.3,
+          "count": 427,
+          "p50": 4,
+          "median": 4,
+          "p75": 5,
+          "p90": 6.8,
+          "p95": 8.8,
+          "p99": 15.6,
+          "p999": 40
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 36,
+          "count": 427,
+          "p50": 2,
+          "median": 2,
+          "p75": 2,
+          "p90": 3,
+          "p95": 3,
+          "p99": 8.9,
+          "p999": 13.1
+        },
+        "vusers.session_length": {
+          "min": 2.1,
+          "max": 44.3,
+          "count": 427,
+          "p50": 4,
+          "median": 4,
+          "p75": 5,
+          "p90": 6.8,
+          "p95": 8.8,
+          "p99": 15.6,
+          "p999": 40
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 445,
+        "vusers.created": 445,
+        "http.requests": 445,
+        "http.codes.204": 445,
+        "http.responses": 445,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 445
+      },
+      "rates": {
+        "http.request_rate": 45
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714370053,
+      "firstHistogramAt": 1689714370056,
+      "lastCounterAt": 1689714379984,
+      "lastHistogramAt": 1689714379984,
+      "firstMetricAt": 1689714370053,
+      "lastMetricAt": 1689714379984,
+      "period": "1689714370000",
+      "summaries": {
+        "http.response_time": {
+          "min": 0,
+          "max": 48,
+          "count": 445,
+          "p50": 2,
+          "median": 2,
+          "p75": 3,
+          "p90": 5,
+          "p95": 6,
+          "p99": 13.1,
+          "p999": 46.1
+        },
+        "vusers.session_length": {
+          "min": 2.1,
+          "max": 57.6,
+          "count": 445,
+          "p50": 4.7,
+          "median": 4.7,
+          "p75": 7.9,
+          "p90": 11.1,
+          "p95": 14.7,
+          "p99": 27.4,
+          "p999": 54.1
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 0,
+          "max": 48,
+          "count": 445,
+          "p50": 2,
+          "median": 2,
+          "p75": 3,
+          "p90": 5,
+          "p95": 6,
+          "p99": 13.1,
+          "p999": 46.1
+        },
+        "vusers.session_length": {
+          "min": 2.1,
+          "max": 57.6,
+          "count": 445,
+          "p50": 4.7,
+          "median": 4.7,
+          "p75": 7.9,
+          "p90": 11.1,
+          "p95": 14.7,
+          "p99": 27.4,
+          "p999": 54.1
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 462,
+        "vusers.created": 462,
+        "http.requests": 462,
+        "http.codes.204": 462,
+        "http.responses": 462,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 462
+      },
+      "rates": {
+        "http.request_rate": 46
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714380054,
+      "firstHistogramAt": 1689714380058,
+      "lastCounterAt": 1689714389989,
+      "lastHistogramAt": 1689714389989,
+      "firstMetricAt": 1689714380054,
+      "lastMetricAt": 1689714389989,
+      "period": "1689714380000",
+      "summaries": {
+        "http.response_time": {
+          "min": 0,
+          "max": 52,
+          "count": 462,
+          "p50": 3,
+          "median": 3,
+          "p75": 4,
+          "p90": 6,
+          "p95": 7.9,
+          "p99": 36.2,
+          "p999": 49.9
+        },
+        "vusers.session_length": {
+          "min": 2.3,
+          "max": 60.2,
+          "count": 462,
+          "p50": 7.5,
+          "median": 7.5,
+          "p75": 10.3,
+          "p90": 13.3,
+          "p95": 17.3,
+          "p99": 40.9,
+          "p999": 58.6
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 0,
+          "max": 52,
+          "count": 462,
+          "p50": 3,
+          "median": 3,
+          "p75": 4,
+          "p90": 6,
+          "p95": 7.9,
+          "p99": 36.2,
+          "p999": 49.9
+        },
+        "vusers.session_length": {
+          "min": 2.3,
+          "max": 60.2,
+          "count": 462,
+          "p50": 7.5,
+          "median": 7.5,
+          "p75": 10.3,
+          "p90": 13.3,
+          "p95": 17.3,
+          "p99": 40.9,
+          "p999": 58.6
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 477,
+        "vusers.created": 477,
+        "http.requests": 476,
+        "http.codes.204": 476,
+        "http.responses": 476,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 476
+      },
+      "rates": {
+        "http.request_rate": 48
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714390060,
+      "firstHistogramAt": 1689714390064,
+      "lastCounterAt": 1689714399999,
+      "lastHistogramAt": 1689714399991,
+      "firstMetricAt": 1689714390060,
+      "lastMetricAt": 1689714399999,
+      "period": "1689714390000",
+      "summaries": {
+        "http.response_time": {
+          "min": 0,
+          "max": 17,
+          "count": 476,
+          "p50": 2,
+          "median": 2,
+          "p75": 2,
+          "p90": 3,
+          "p95": 4,
+          "p99": 7,
+          "p999": 15
+        },
+        "vusers.session_length": {
+          "min": 1.9,
+          "max": 53.3,
+          "count": 476,
+          "p50": 4.1,
+          "median": 4.1,
+          "p75": 5.6,
+          "p90": 8.6,
+          "p95": 10.9,
+          "p99": 17.6,
+          "p999": 34.8
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 0,
+          "max": 17,
+          "count": 476,
+          "p50": 2,
+          "median": 2,
+          "p75": 2,
+          "p90": 3,
+          "p95": 4,
+          "p99": 7,
+          "p999": 15
+        },
+        "vusers.session_length": {
+          "min": 1.9,
+          "max": 53.3,
+          "count": 476,
+          "p50": 4.1,
+          "median": 4.1,
+          "p75": 5.6,
+          "p90": 8.6,
+          "p95": 10.9,
+          "p99": 17.6,
+          "p999": 34.8
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Mark a question as helpful": 425,
+        "vusers.created": 425,
+        "http.requests": 426,
+        "http.codes.204": 426,
+        "http.responses": 426,
+        "http.downloaded_bytes": 0,
+        "vusers.failed": 0,
+        "vusers.completed": 426
+      },
+      "rates": {
+        "http.request_rate": 49
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1689714400000,
+      "firstHistogramAt": 1689714400033,
+      "lastCounterAt": 1689714408855,
+      "lastHistogramAt": 1689714408855,
+      "firstMetricAt": 1689714400000,
+      "lastMetricAt": 1689714408855,
+      "period": "1689714400000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 33,
+          "count": 426,
+          "p50": 2,
+          "median": 2,
+          "p75": 2,
+          "p90": 2,
+          "p95": 3,
+          "p99": 5,
+          "p999": 6
+        },
+        "vusers.session_length": {
+          "min": 2.1,
+          "max": 72.5,
+          "count": 426,
+          "p50": 4.1,
+          "median": 4.1,
+          "p75": 5.1,
+          "p90": 7.8,
+          "p95": 11.1,
+          "p99": 33.5,
+          "p999": 38.5
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 33,
+          "count": 426,
+          "p50": 2,
+          "median": 2,
+          "p75": 2,
+          "p90": 2,
+          "p95": 3,
+          "p99": 5,
+          "p999": 6
+        },
+        "vusers.session_length": {
+          "min": 2.1,
+          "max": 72.5,
+          "count": 426,
+          "p50": 4.1,
+          "median": 4.1,
+          "p75": 5.1,
+          "p90": 7.8,
+          "p95": 11.1,
+          "p99": 33.5,
+          "p999": 38.5
+        }
+      }
+    }
+  ]
+}
