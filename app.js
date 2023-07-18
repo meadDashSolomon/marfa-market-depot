@@ -4,10 +4,11 @@ const { fetchAnswers, addAnswer, markAnswerHelpful, markAnswerReported } = requi
 const app = express();
 const port = 3000;
 
-app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
-});
-
+if (!module.parent) {
+  app.listen(port, () => {
+    console.log(`Server listening at http://localhost:${port}`);
+  });
+}
 
 // GET REQUESTS
 
@@ -113,3 +114,6 @@ app.put('/qa/answers/:answer_id/report', (req, res) => {
       console.log("APP.JS ERROR REPORTING ANSWER:::::", err)
     })
 })
+
+// export Express app object without listening on any port for testing
+module.exports = app;
