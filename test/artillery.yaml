@@ -97,6 +97,25 @@
 #               helpful: 0
 
 #----- MARK QUESTION HELPFUL -----
+# config:
+#   target: "http://localhost:3000"
+#   phases:
+#     - duration: 60
+#       arrivalRate: 5
+#       rampTo: 10
+#     - duration: 60
+#       arrivalRate: 10
+#       rampTo: 50
+#     - duration: 300
+#       rampTo: 50
+# scenarios:
+#   - name: Mark a question as helpful
+#     flow:
+#       - put:
+#           url: "/qa/questions/{{ $randomNumber(1, 100) }}/helpful"
+
+
+#----- REPORT ANSWER -----
 config:
   target: "http://localhost:3000"
   phases:
@@ -109,10 +128,7 @@ config:
     - duration: 300
       rampTo: 50
 scenarios:
-  - name: Mark a question as helpful
+  - name: Report an answer
     flow:
       - put:
-          url: "/qa/questions/{{ $randomNumber(1, 100) }}/helpful"
-
-
-#----- REPORT ANSWER -----
+          url: "/qa/answers/{{ $randomNumber(1, 100) }}/report"
