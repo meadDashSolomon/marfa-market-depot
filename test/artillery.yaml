@@ -43,34 +43,6 @@
 #           url: "/qa/questions/3/answers"
 
 #----- ADD QUESITON -----
-config:
-  target: "http://localhost:3000"
-  phases:
-    - duration: 60
-      arrivalRate: 5
-      rampTo: 10
-    - duration: 60
-      arrivalRate: 10
-      rampTo: 50
-    - duration: 300
-      rampTo: 50
-scenarios:
-  - name: Post a question and an answer
-    flow:
-      - post:
-          url: "/qa/questions"
-          json:
-            product_id: 1
-            body: "What is the color of this product?"
-            date_written: 12345
-            asker_name: 'Roberto'
-            helpful: 0
-            reported: 0
-            asker_email: 'roberto99@yahoo.com'
-            answers: {}
-
-
-#----- ADD answer -----
 # config:
 #   target: "http://localhost:3000"
 #   phases:
@@ -86,12 +58,45 @@ scenarios:
 #   - name: Post a question and an answer
 #     flow:
 #       - post:
-#           url: "/qa/questions/1/answers"
+#           url: "/qa/questions"
 #           json:
-#               question_id: 1
-#               body: 'String'
-#               date_written: 12345
-#               answerer_name: 'String'
-#               answerer_email: 'String'
-#               reported: 0
-#               helpful: 0
+#             product_id: 1
+#             body: "What is the color of this product?"
+#             date_written: 12345
+#             asker_name: 'Roberto'
+#             helpful: 0
+#             reported: 0
+#             asker_email: 'roberto99@yahoo.com'
+#             answers: {}
+
+
+#----- ADD answer -----
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 60
+      arrivalRate: 5
+      rampTo: 10
+    - duration: 60
+      arrivalRate: 10
+      rampTo: 50
+    - duration: 300
+      rampTo: 50
+scenarios:
+  - name: Post a question and an answer
+    flow:
+      - post:
+          url: "/qa/questions/1/answers"
+          json:
+              question_id: 1
+              body: 'String'
+              date_written: 12345
+              answerer_name: 'String'
+              answerer_email: 'String'
+              reported: 0
+              helpful: 0
+
+#----- MARK QUESTION HELPFUL -----
+
+
+#----- REPORT ANSWER -----
