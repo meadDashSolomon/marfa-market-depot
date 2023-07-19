@@ -1,17 +1,9 @@
 const mongoose = require("mongoose");
 
-mongoose.connect('mongodb://127.0.0.1:27017/SDC', {
-  useNewUrlParser: true, useUnifiedTopology: true
-})
-
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
-db.once('open', () => console.log('MongoDB connected...'));
-
 // create mongoose schema
 const questionsSchema = new mongoose.Schema({
   id: Number,
-  product_id: Number,
+  product_id: { type: Number, index: true },
   body: String,
   date_written: Date,
   asker_name: String,
@@ -21,12 +13,25 @@ const questionsSchema = new mongoose.Schema({
   answers: Object,
 })
 
+mongoose.connect('mongodb://127.0.0.1:27017/SDC', {
+  useNewUrlParser: true, useUnifiedTopology: true
+})
+
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+db.once('open', () => console.log('MongoDB connected...'));
+
 // Create mongoose model
 const Questions = mongoose.model("Question", questionsSchema);
 
+// Create indexes after connecting to the database
+Questions.createIndexes()
+      .then(() => console.log('Indexes created for Questions collection'))
+      .catch(err => console.log(err));
+
 // define fetch questions function
 exports.findQuestions = (product_id) => {
-    return Questions.find({ product_id: product_id }).exec()
+    return Questions.find({ product_id: product_id }, 'body date_written asker_name helpful').lean().exec()
       .then((questions) => {
         console.log('FIND QUESITONS SUCCESSFUL::::::', questions);
         return questions;
