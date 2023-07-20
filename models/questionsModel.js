@@ -44,23 +44,6 @@ exports.findQuestions = (product_id) => {
     });
 }
 
-// exports.findQuestions = (product_id) => {
-//   return Questions.countDocuments({ product_id: product_id })
-//     .then((count) => {
-//       const lastTenPercent = Math.floor(count * 0.1);
-//       const skipCount = count - lastTenPercent;
-//       return Questions.find({ product_id: product_id }, 'body date_written asker_name helpful').skip(skipCount).limit(10).exec()
-//     })
-//     .then((questions) => {
-//       console.log('FIND QUESITONS SUCCESSFUL::::::', questions);
-//       return questions;
-//     })
-//     .catch(err => {
-//       console.log('ERROR FINDING QUESTIONS::::::', err);
-//       throw err;
-//     });
-// }
-
 exports.saveQuestion = (question) => {
   const newQuestion = new Questions(question);
   return newQuestion.save()
