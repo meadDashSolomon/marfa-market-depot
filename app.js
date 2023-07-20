@@ -1,3 +1,4 @@
+require('newrelic');
 const express = require('express');
 const { fetchQuestions, addQuestion, markQuestionHelpful, markQuestionReported } = require('./controllers/questionsController');
 const { fetchAnswers, addAnswer, markAnswerHelpful, markAnswerReported } = require('./controllers/answersController');

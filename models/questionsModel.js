@@ -33,15 +33,15 @@ Questions.createIndexes()
 // see mongoose syntax for field optimization
 // https://mongoosejs.com/docs/api/model.html#Model.find()
 exports.findQuestions = (product_id) => {
-    return Questions.find({ product_id: product_id }, 'body date_written asker_name helpful').limit(10).exec()
-      .then((questions) => {
-        console.log('FIND QUESITONS SUCCESSFUL::::::', questions);
-        return questions;
-      })
-      .catch(err => {
-        console.log('ERROR FINDING QUESTIONS::::::', err);
-        throw err;
-      });
+  return Questions.find({ product_id: product_id }, 'body date_written asker_name helpful').limit(10).exec()
+    .then((questions) => {
+      console.log('FIND QUESITONS SUCCESSFUL::::::', questions);
+      return questions;
+    })
+    .catch(err => {
+      console.log('ERROR FINDING QUESTIONS::::::', err);
+      throw err;
+    });
 }
 
 // exports.findQuestions = (product_id) => {

@@ -20,7 +20,8 @@
   "homepage": "https://github.com/Turing-s-Innovators/Turings-Backend#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "mongoose": "^7.3.4"
+    "mongoose": "^7.3.4",
+    "newrelic": "^10.4.2"
   },
   "devDependencies": {
     "chai": "^4.3.7",

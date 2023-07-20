@@ -27,7 +27,7 @@ Answers.createIndexes()
 
 
 exports.findAnswers = (question_id) => {
-  return Answers.find({ question_id: question_id })
+  return Answers.find({ question_id: question_id }, 'body date_written answerer_name helpful').limit(10).exec()
     .then((answers) => {
       console.log('FIND ANSWERS SUCCESSFULL:::::::', answers);
       return answers;
