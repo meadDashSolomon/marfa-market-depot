@@ -11,7 +11,7 @@ const answersSchema = new mongoose.Schema({
   helpful: Number,
 })
 
-mongoose.connect('mongodb://127.0.0.1:27017/SDC', {
+mongoose.connect('mongodb://mead:qwerty@3.138.106.236:27017/SDC', {
   useNewUrlParser: true, useUnifiedTopology: true
 })
 
