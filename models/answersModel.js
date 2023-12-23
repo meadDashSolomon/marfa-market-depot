@@ -29,13 +29,28 @@ mongoose
 //   useNewUrlParser: true, useUnifiedTopology: true
 // })
 
-exports.findAnswers = async (question_id) => {
-  return Answers.find(
-    { question_id: question_id },
-    "body date_written answerer_name helpful"
-  )
-    .limit(10)
-    .exec();
+exports.findAnswers = (question_id) => {
+  return Answers.aggregate([
+    { $match: { question_id: Number(question_id) } },
+    {
+      $lookup: {
+        from: "answersphotos", // the collection name in MongoDB should be the plural, lowercase form
+        localField: "id", // the field in the answers collection
+        foreignField: "answer_id", // the corresponding field in the Answers Photos collection
+        as: "photos", // the field in which to put the joined documents
+      },
+    },
+    {
+      $project: {
+        body: 1,
+        date_written: 1,
+        answerer_name: 1,
+        helpful: 1,
+        photos: 1, // include the joined photos in the output
+      },
+    },
+    { $limit: 10 },
+  ]).exec();
 };
 
 exports.saveAnswer = async (question_id, answer) => {
