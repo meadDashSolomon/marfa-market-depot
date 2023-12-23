@@ -1,54 +1,59 @@
-const { findAnswers, saveAnswer, updateAnswer, reportAnswer } = require('../models/answersModel');
+const express = require("express");
+const router = express.Router();
+const {
+  findAnswers,
+  saveAnswer,
+  updateAnswerHelpful,
+  updateAnswerReported,
+} = require("../models/answersModel");
 
-exports.fetchAnswers = (question_id, res) => {
-  return findAnswers(question_id)
-    .then((answers) => {
-      console.log("ANSWERSCONTROLLER SUCCESSFULLY FETCHED ANSWERS:::::", answers);
-      res.status(200).json(answers);
-      return answers;
-    })
-    .catch((err) => {
-      console.log("ANSWERSCONTROLLER ERROR FETCHING ANSWERS:::::", err);
-      return res.sendStatus(400);
-    })
-}
+router.get("/:question_id", async (req, res) => {
+  try {
+    const question_id = req.params.question_id;
+    const answers = await findAnswers(question_id);
+    res.status(200).json(answers);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
 
-exports.addAnswer = (question_id, answer, res) => {
-  return saveAnswer(question_id, answer)
-    .then((savedAnswer) => {
-      console.log("ANSWERSCONTROLLER SUCCESSFULLY SAVED ANSWER:::::", savedAnswer);
-      res.status(201).json(savedAnswer);
-      return saveAnswer;
-    })
-    .catch((err) => {
-      console.log("ANSWERSCONTROLLER ERROR SAVING ANSWER:::::", err);
-      return res.sendStatus(400);
-    })
-}
+router.post("/:question_id", async (req, res) => {
+  try {
+    const question_id = req.params.question_id;
+    const answer = req.body;
+    const savedAnswer = await saveAnswer(question_id, answer);
+    res.status(201).json(savedAnswer);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
 
+router.put("/:answer_id/helpful", async (req, res) => {
+  try {
+    const answer_id = req.params.answer_id;
+    const updatedAnswer = await updateAnswerHelpful(answer_id);
+    if (updatedAnswer) {
+      res.status(204).end();
+    } else {
+      res.status(404).json({ error: "Answer not found" });
+    }
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
 
-exports.markAnswerHelpful = (answer_id, res) => {
-  return updateAnswer(answer_id)
-    .then((updatedAnswer) => {
-      console.log("QUESTIONCONTROLLER.JS SUCCESSFULLY UPDATED ANSWER", updatedAnswer)
-      res.status(204).send(updatedAnswer);
-      return updatedAnswer;
-    })
-    .catch((err) => {
-      console.log("QUESTIONCONTROLLER.JS ERROR UPDATING ANSWER", err);
-      return res.sendStatus(400);
-    })
-}
+router.put("/:answer_id/report", async (req, res) => {
+  try {
+    const answer_id = req.params.answer_id;
+    const reportedAnswer = await updateAnswerReported(answer_id);
+    if (reportedAnswer) {
+      res.status(204).end();
+    } else {
+      res.status(404).json({ error: "Answer not found" });
+    }
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
 
-exports.markAnswerReported = (answer_id, res) => {
-  return reportAnswer(answer_id)
-    .then((reportedAnswer) => {
-      console.log("QUESTIONCONTROLLER.JS SUCCESSFULLY REPORTED ANSWER", reportedAnswer)
-      res.status(204).send(reportedAnswer);
-      return reportedAnswer;
-    })
-    .catch((err) => {
-      console.log("QUESTIONCONTROLLER.JS ERROR REPORTING ANSWER", err);
-      return res.sendStatus(400);
-    })
-}
+module.exports = router;

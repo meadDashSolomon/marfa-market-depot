@@ -1,27 +1,19 @@
 const mongoose = require("mongoose");
 
-// create mongoose schema
 const questionsSchema = new mongoose.Schema({
   id: Number,
   product_id: { type: Number, index: true },
   body: String,
   date_written: Date,
   asker_name: String,
-  helpful: Number,
-  reported: Number,
+  helpful: { type: Number, default: 0 },
+  reported: { type: Boolean, default: false },
   asker_email: String,
   answers: Object,
 });
 
-// Create mongoose model
 const Questions = mongoose.model("Question", questionsSchema);
 
-// EC2 instance
-// mongoose.connect("mongodb://mead:qwerty@3.138.106.236:27017/SDC", {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// });
-// Local host
 mongoose
   .connect("mongodb://127.0.0.1:27017/SDC", {
     useNewUrlParser: true,
@@ -29,11 +21,15 @@ mongoose
   })
   .then(() => {
     console.log("MongoDB connected...");
-    Questions.createIndexes();
   })
-  .catch((err) => console.error("MongoDB connection:", err));
+  .catch((err) => console.error("MongoDB connection error:", err));
 
-exports.findQuestions = async (product_id) => {
+// Ensure indexes are created
+Questions.createIndexes().catch((err) =>
+  console.error("Error creating indexes:", err)
+);
+
+exports.findQuestions = (product_id) => {
   return Questions.find(
     { product_id: product_id },
     "body date_written asker_name helpful"
@@ -42,12 +38,12 @@ exports.findQuestions = async (product_id) => {
     .exec();
 };
 
-exports.saveQuestion = async (question) => {
-  const newQuestion = new Questions(question);
-  return newQuestion.save();
+exports.saveQuestion = (questionData) => {
+  const question = new Questions(questionData);
+  return question.save();
 };
 
-exports.updateQuestion = async (question_id) => {
+exports.updateQuestionHelpful = (question_id) => {
   return Questions.findOneAndUpdate(
     { id: question_id },
     { $inc: { helpful: 1 } },
@@ -55,10 +51,10 @@ exports.updateQuestion = async (question_id) => {
   ).exec();
 };
 
-exports.reportQuestion = async (question_id) => {
+exports.updateQuestionReported = (question_id) => {
   return Questions.findOneAndUpdate(
     { id: question_id },
-    { $inc: { reported: 1 } },
+    { reported: true },
     { new: true }
   ).exec();
 };
