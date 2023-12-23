@@ -34,7 +34,7 @@ exports.findAnswers = (question_id) => {
     { $match: { question_id: Number(question_id) } },
     {
       $lookup: {
-        from: "answersphotos", // the collection name in MongoDB should be the plural, lowercase form
+        from: "Answers Photos", // collection name
         localField: "id", // the field in the answers collection
         foreignField: "answer_id", // the corresponding field in the Answers Photos collection
         as: "photos", // the field in which to put the joined documents
