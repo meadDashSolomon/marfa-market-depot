@@ -7,6 +7,7 @@ const {
   updateAnswerReported,
 } = require("../models/answersModel");
 
+// GET request handler for retrieving answers to a question
 router.get("/:question_id", async (req, res) => {
   try {
     const question_id = req.params.question_id;
@@ -17,6 +18,7 @@ router.get("/:question_id", async (req, res) => {
   }
 });
 
+// POST request handler for submitting a new answer
 router.post("/:question_id", async (req, res) => {
   try {
     const question_id = req.params.question_id;
@@ -28,6 +30,7 @@ router.post("/:question_id", async (req, res) => {
   }
 });
 
+// PUT request handler for marking a answer as helpful
 router.put("/:answer_id/helpful", async (req, res) => {
   try {
     const answer_id = req.params.answer_id;
@@ -42,6 +45,7 @@ router.put("/:answer_id/helpful", async (req, res) => {
   }
 });
 
+// PUT request handler for reporting a answer
 router.put("/:answer_id/report", async (req, res) => {
   try {
     const answer_id = req.params.answer_id;

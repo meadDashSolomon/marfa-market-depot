@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+// Define the schema for questions
 const questionsSchema = new mongoose.Schema({
   id: Number,
   product_id: { type: Number, index: true },
@@ -14,6 +15,7 @@ const questionsSchema = new mongoose.Schema({
 
 const Questions = mongoose.model("Question", questionsSchema);
 
+// Connect to MongoDB
 mongoose
   .connect("mongodb://127.0.0.1:27017/SDC", {
     useNewUrlParser: true,

@@ -7,6 +7,7 @@ const {
   updateQuestionReported,
 } = require("../models/questionsModel");
 
+// GET request handler for retrieving questions for a product
 router.get("/", async (req, res) => {
   try {
     const product_id = req.query.product_id;
@@ -20,6 +21,7 @@ router.get("/", async (req, res) => {
   }
 });
 
+// POST request handler for submitting a new question
 router.post("/", async (req, res) => {
   try {
     const question = req.body;
@@ -30,6 +32,7 @@ router.post("/", async (req, res) => {
   }
 });
 
+// PUT request handler for marking a question as helpful
 router.put("/:question_id/helpful", async (req, res) => {
   try {
     const question_id = req.params.question_id;
@@ -44,6 +47,7 @@ router.put("/:question_id/helpful", async (req, res) => {
   }
 });
 
+// PUT request handler for reporting a question
 router.put("/:question_id/report", async (req, res) => {
   try {
     const question_id = req.params.question_id;

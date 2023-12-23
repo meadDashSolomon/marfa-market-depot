@@ -6,7 +6,10 @@ const answersRouter = require("./controllers/answersController");
 const app = express();
 const port = 3000;
 
-app.use(express.json());
+// Middleware
+app.use(express.json()); // Parse JSON bodies for incoming requests
+
+// Routing
 app.use("/qa/questions", questionsRouter);
 app.use("/qa/answers", answersRouter);
 

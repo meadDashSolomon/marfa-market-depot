@@ -33,11 +33,6 @@ mongoose
   })
   .catch((err) => console.error("MongoDB connection error:", err));
 
-// EC2 instance
-// mongoose.connect('mongodb://mead:qwerty@3.138.106.236:27017/SDC', {
-//   useNewUrlParser: true, useUnifiedTopology: true
-// })
-
 exports.findAnswers = (question_id) => {
   return Answers.aggregate([
     { $match: { question_id: Number(question_id) } },
