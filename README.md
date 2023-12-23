@@ -1,63 +1,67 @@
-# Project Atelier
+# Marfa Market Depot - Backend for Fashion E-commerce Site
 
-### Overview:
-An updated/redesigned version of a retail portal.
+This project represents the backend of an e-commerce website, "Marfa Market Depot", designed to support and enhance the user experience provided by the frontend "Marfa Marketplace." This backend efficiently handles data requests and management for the questions and answers component of the Marfa Marketplace frontend.
 
-### Table of Contents:
+![Node.js](https://img.shields.io/badge/Node.js-%2343853D.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express.js-%23404d59.svg?style=for-the-badge) ![MongoDB](https://img.shields.io/badge/MongoDB-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![NGINX](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white) ![New Relic](https://img.shields.io/badge/New%20Relic-%23008C99.svg?style=for-the-badge&logo=newrelic&logoColor=white)
+
+## Table of Contents:
+
 [Description](#Description)
 
-[Installation](#Installation)
+[Performance-Enhancements](#Performance-Enhancements)
 
-[Usage](#Usage)
+[Instalation](#Instalation)
+
+[Git-Workflow](#Git-Workflow)
 
 ### Description:
-This retail web portal will consist of four modules: Overview, Ratings & Reviews, Questions & Answers, and Related Items & Comparison.
-<br><br>
-The Overview will be the top-most module on the page and will contain components that relate to the current product. Including an image gallery, information about the current product, the ability to select from different styles of the product, and the ability to add the product to the customer's cart. The Ratings & Reviews module will allow the customer to view or submit ratings and reviews for tha current product. The reviews can be sorted by helpful status, newest, or relevance. Questions & Answers will allow the customer to view, ask, or answer questions about the current product. Lastly, the Related Items & Comparison module will show a list of products related to the current product in Overview (determined internally) as well as, a list of customer chosen items grouped with the current item to make an "outfit".
 
-### Installation:
-Dependencies needed:
-- axios
-- express
-- node
-- react
-- react-dom
-- @babel/core
-- @babel/preset-env
-- @babel/preset-react
-- babel-loader
-- webpack
-- webpack-cli
-- webpack-dev-server
-- moment
-- Font Awesome
-- dotenv
-- pm2
-- brotli webpack plugin
-- compression webpack plugin
-- gzip webpack plugin
+As part of a collaborative project involving four software engineering students, I focused on developing the backend to support the Questions & Answers component of the frontend retail web portal.
 
-Instructions:
-1. Navigate into root directory of Project Atelier.
-2. Install dependencies via npm install.
-3. Run npm run build.
-4. Run npm start to begin a pm2 instance.
+- **Overview**: Manages requests related to product details, styles, and cart operations.
+- **Ratings & Reviews**: Handles data for customer reviews, including submission and retrieval.
+- **Questions & Answers**: Facilitates the Q&A section, allowing customers to ask and answer product-related questions.
+- **Related Items & Comparison**: Supports retrieving data for related products and customer-built outfits.
 
-### Usage:
-This can be used to show off products to potential customers and allow them to purchase the products.
+### Performance-Enhancements
 
+**Optimization Techniques**:
 
-## Git Workflow
- 1. Create new branch
+- Improved read times for questions and answers using MongoDB's aggregation pipeline, indexing, limits, and field projections.
+
+**New Relic Monitoring**:
+
+- Utilized New Relic for real-time performance monitoring, achieving significant improvements in response times and throughput.
+- GET Questions: Response time reduced by 100%.
+- GET Answers: Response time reduced by over 200%.
+- Mark Question/Answer Helpful and Report Question/Answer times reduced by 75%.
+
+**Loader.io Testing and Load Balancing with NGINX**:
+
+- Increased RPS from 1000 to 2700 using load balancing and caching with Nginx while maintaining latency < 50ms and 0% error rate
+
+### Further Improvements:
+
+- try different implementations of caching
+
+### Installation
+
+1. Navigate to the root directory.
+2. Install dependencies: `npm install`.
+3. Start the server: `npm run devStart`.
+
+### Git Workflow
+
+1.  Create new branch
     `git checkout -b <name of branch>`
- 2. ∆ code to complete ticket
- 3. `git status`
- 4. `git add < . . . >`
- 5. `git commit`
- 6. `git push origin <branch I'm pushing to remote>`
- 7. `git checkout main`
- 8. `git pull origin main`
- 9. `git checkout <branch name>`
- 10. `git merge main`
- 11. `git push origin <branch name>`
- 12. Pull request
+2.  ∆ code to complete ticket
+3.  `git status`
+4.  `git add < . . . >`
+5.  `git commit`
+6.  `git push origin <branch I'm pushing to remote>`
+7.  `git checkout main`
+8.  `git pull origin main`
+9.  `git checkout <branch name>`
+10. `git merge main`
+11. `git push origin <branch name>`
+12. Pull request
