@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+// Define the Answers schema
 const answersSchema = new mongoose.Schema({
   id: Number,
   question_id: { type: Number, index: true },
@@ -10,8 +11,16 @@ const answersSchema = new mongoose.Schema({
   reported: Number,
   helpful: Number,
 });
+// Define the Answers Photos schema
+const answersPhotosSchema = new mongoose.Schema({
+  answer_id: { type: Number, index: true },
+  url: String,
+});
 
+// Create the model for Answers
 const Answers = mongoose.model("Answer", answersSchema);
+// Create the model for Answers Photos
+const AnswersPhotos = mongoose.model("AnswersPhoto", answersPhotosSchema);
 
 mongoose
   .connect("mongodb://127.0.0.1:27017/SDC", {
@@ -53,9 +62,27 @@ exports.findAnswers = (question_id) => {
   ]).exec();
 };
 
-exports.saveAnswer = async (question_id, answer) => {
+exports.saveAnswer = async (question_id, answer, photos) => {
+  // First save the answer
   const newAnswer = new Answers({ ...answer, question_id });
-  return newAnswer.save();
+  const savedAnswer = await newAnswer.save();
+
+  // Then, if there are photos, save them to the Answers Photos collection
+  if (photos && photos.length > 0) {
+    // Use map to create multiple promises for each photo to be saved
+    const photoSavePromises = photos.map((photoUrl) => {
+      const newPhoto = new AnswersPhotos({
+        answer_id: savedAnswer.id, // Use the saved answer's ID
+        url: photoUrl,
+      });
+      return newPhoto.save();
+    });
+    // Wait for all photo save operations to complete
+    await Promise.all(photoSavePromises);
+  }
+
+  // Return the saved answer and any saved photos
+  return { answer: savedAnswer, photos };
 };
 
 exports.updateAnswer = async (answer_id) => {
